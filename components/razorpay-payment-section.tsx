@@ -398,7 +398,7 @@ export function RazorpayPaymentSection() {
                 <input
                   type="tel"
                   required
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 94299 02012"
                   value={parentPhone}
                   onChange={(e) => setParentPhone(e.target.value)}
                   className="w-full text-xs p-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-teal-500"

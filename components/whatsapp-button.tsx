@@ -6,7 +6,7 @@ import { MessageCircle, X } from "lucide-react"
 export function FloatingWhatsApp() {
   const [showTooltip, setShowTooltip] = useState(true)
 
-  const phoneNumber = "919876543210" // Sample educator contact
+  const phoneNumber = "919429902012" // Official educator contact
   const message = encodeURIComponent(
     "Hello GritWit Team! I am interested in learning more about the cognitive enrichment programme for my child (Ages 6–9)."
   )

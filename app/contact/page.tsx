@@ -82,7 +82,7 @@ export default function ContactPage() {
         stats={[
           { label: 'Response Time', value: '< 2 Hours' },
           { label: 'Admissions Format', value: 'Direct Educator Call' },
-          { label: 'Direct WhatsApp', value: '+91 98765 43210' }
+          { label: 'Direct WhatsApp', value: '+91 94299 02012' }
         ]}
         themeColor="teal"
       />
@@ -119,7 +119,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <span className="font-bold text-stone-900 block">Phone & Discovery Call</span>
-                    <a href="tel:+919876543210" className="text-stone-700 hover:underline">+91 98765 43210</a>
+                    <a href="tel:+919429902012" className="text-stone-700 hover:underline">+91 94299 02012</a>
                   </div>
                 </div>
 
@@ -130,12 +130,12 @@ export default function ContactPage() {
                   <div>
                     <span className="font-bold text-stone-900 block">WhatsApp Support</span>
                     <a
-                      href="https://wa.me/919876543210"
+                      href="https://wa.me/919429902012"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-emerald-700 font-semibold hover:underline"
                     >
-                      Chat on WhatsApp (+91 98765 43210)
+                      Chat on WhatsApp (+91 94299 02012)
                     </a>
                   </div>
                 </div>
@@ -219,7 +219,7 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       required
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 94299 02012"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                       className="w-full text-xs p-3 rounded-xl border border-stone-200 focus:outline-none focus:ring-2 focus:ring-teal-500"
@@ -322,7 +322,7 @@ export default function ContactPage() {
                   <Phone className="w-5 h-5 text-teal-700 shrink-0 mt-0.5" />
                   <div>
                     <span className="font-bold text-stone-900 block">Gujarat Admissions Helpline</span>
-                    <span>+91 98765 43210 / admissions@gritwit.com</span>
+                    <span>+91 94299 02012 / admissions@gritwit.com</span>
                   </div>
                 </div>
 
@@ -347,7 +347,7 @@ export default function ContactPage() {
                 </a>
                 <span className="text-stone-300">•</span>
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919429902012"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-bold text-emerald-700 hover:underline flex items-center gap-1"
@@ -451,7 +451,7 @@ export default function ContactPage() {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919429902012"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"
