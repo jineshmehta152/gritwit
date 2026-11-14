@@ -195,7 +195,7 @@ export default function AboutPage() {
         title="Where Thinking Skills Meet"
         titleHighlight="Human Values."
         description="GritWit is a purposeful response to an educational culture that over-values memorised answers and under-values intellectual curiosity, resilience, and compassion."
-        bgImage="/gritwit/educator-founder.jpg"
+        bgImage="/gritwit/about-pod-thinking.jpg"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'About GritWit' }

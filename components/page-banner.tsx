@@ -34,19 +34,17 @@ export function PageBanner({
       : 'from-amber-300 via-yellow-200 to-teal-300'
 
   return (
-    <section className="relative overflow-hidden bg-slate-900 text-white min-h-[340px] sm:min-h-[400px] lg:min-h-[440px] flex flex-col justify-between pt-8 sm:pt-12 pb-0">
-      {/* Background Image: High visibility with rich photographic depth */}
+    <section className="relative overflow-hidden bg-stone-900 text-white min-h-[340px] sm:min-h-[400px] lg:min-h-[440px] flex flex-col justify-between pt-8 sm:pt-12 pb-0">
+      {/* Background Image: Maximum photographic clarity & prominent visibility */}
       <div className="absolute inset-0 z-0">
         <img
           src={bgImage}
           alt={title}
-          className="w-full h-full object-cover object-center filter brightness-[0.88] contrast-[1.12] saturate-[1.25] scale-100 transform motion-safe:transition-transform duration-1000"
+          className="w-full h-full object-cover object-center filter brightness-[0.95] contrast-[1.1] saturate-[1.25] scale-100 transform motion-safe:transition-transform duration-1000"
         />
-        {/* Soft, translucent gradients that protect text legibility while keeping the photograph crisp & clearly visible */}
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/80 via-stone-950/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-black/20" />
-        <div className="absolute top-0 right-1/4 w-80 h-80 bg-amber-400/15 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 left-10 w-72 h-72 bg-teal-400/15 rounded-full blur-3xl pointer-events-none" />
+        {/* Lighter, softer directional gradient: covers only the text area on left, keeping the photo vibrant and clear */}
+        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/70 via-stone-950/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-950/50 via-transparent to-transparent" />
       </div>
 
       {/* Content Container */}
