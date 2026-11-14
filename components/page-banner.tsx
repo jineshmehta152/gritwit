@@ -26,27 +26,27 @@ export function PageBanner({
 }: PageBannerProps) {
   const highlightClass =
     themeColor === 'amber'
-      ? 'from-amber-600 via-orange-500 to-amber-700'
+      ? 'from-amber-300 via-amber-200 to-yellow-400'
       : themeColor === 'emerald'
-      ? 'from-teal-600 via-emerald-600 to-amber-600'
+      ? 'from-emerald-300 via-teal-200 to-amber-300'
       : themeColor === 'cyan'
-      ? 'from-teal-600 via-cyan-600 to-amber-600'
-      : 'from-teal-700 via-amber-600 to-orange-600'
+      ? 'from-cyan-300 via-sky-200 to-amber-300'
+      : 'from-amber-300 via-yellow-200 to-teal-300'
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-amber-50/90 via-orange-50/30 to-teal-50/50 text-stone-900 min-h-[300px] sm:min-h-[350px] lg:min-h-[390px] flex flex-col justify-between pt-8 sm:pt-12 pb-0 border-b border-amber-100/60">
-      {/* Background Image with warm bright sunny overlay */}
+    <section className="relative overflow-hidden bg-slate-900 text-white min-h-[340px] sm:min-h-[400px] lg:min-h-[440px] flex flex-col justify-between pt-8 sm:pt-12 pb-0">
+      {/* Background Image: High visibility with rich photographic depth */}
       <div className="absolute inset-0 z-0">
         <img
           src={bgImage}
           alt={title}
-          className="w-full h-full object-cover object-center opacity-25 filter contrast-[1.05] saturate-[1.2] scale-100 transform motion-safe:transition-transform duration-1000"
+          className="w-full h-full object-cover object-center filter brightness-[0.88] contrast-[1.12] saturate-[1.25] scale-100 transform motion-safe:transition-transform duration-1000"
         />
-        {/* Soft, warm, sunny daylight gradients */}
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-50/95 via-amber-50/80 to-amber-50/60" />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-amber-100/30" />
-        <div className="absolute top-0 right-1/4 w-80 h-80 bg-amber-300/25 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 left-10 w-72 h-72 bg-teal-300/20 rounded-full blur-3xl pointer-events-none" />
+        {/* Soft, translucent gradients that protect text legibility while keeping the photograph crisp & clearly visible */}
+        <div className="absolute inset-0 bg-gradient-to-r from-stone-950/80 via-stone-950/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-black/20" />
+        <div className="absolute top-0 right-1/4 w-80 h-80 bg-amber-400/15 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-10 left-10 w-72 h-72 bg-teal-400/15 rounded-full blur-3xl pointer-events-none" />
       </div>
 
       {/* Content Container */}
@@ -54,21 +54,21 @@ export function PageBanner({
         <div className="max-w-3xl space-y-3.5 sm:space-y-4">
           {/* Breadcrumb Navigation */}
           {breadcrumbs && breadcrumbs.length > 0 && (
-            <nav className="flex items-center gap-2 text-xs font-bold text-stone-600 tracking-wide">
+            <nav className="flex items-center gap-2 text-xs font-bold text-slate-200/90 tracking-wide">
               {breadcrumbs.map((crumb, idx) => (
                 <React.Fragment key={idx}>
                   {crumb.href ? (
                     <Link
                       href={crumb.href}
-                      className="hover:text-amber-700 transition-colors flex items-center gap-1"
+                      className="hover:text-amber-300 transition-colors flex items-center gap-1"
                     >
                       {crumb.label}
                     </Link>
                   ) : (
-                    <span className="text-amber-800 font-extrabold">{crumb.label}</span>
+                    <span className="text-amber-300 font-extrabold">{crumb.label}</span>
                   )}
                   {idx < breadcrumbs.length - 1 && (
-                    <ChevronRight className="w-3.5 h-3.5 text-stone-400" />
+                    <ChevronRight className="w-3.5 h-3.5 text-slate-400" />
                   )}
                 </React.Fragment>
               ))}
@@ -77,14 +77,14 @@ export function PageBanner({
 
           {/* Badge Pill */}
           {badge && (
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-extrabold shadow-sm bg-white/90 border border-amber-300 text-stone-900 backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-              <span>{badge}</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-extrabold shadow-md bg-stone-950/70 border border-amber-300/60 text-amber-300 backdrop-blur-md">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+              <span className="text-white">{badge}</span>
             </div>
           )}
 
           {/* Main Title */}
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-stone-900 tracking-tight leading-[1.15]">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.15] drop-shadow-sm">
             {title}{' '}
             {titleHighlight && (
               <span className={`bg-gradient-to-r ${highlightClass} bg-clip-text text-transparent`}>
@@ -94,7 +94,7 @@ export function PageBanner({
           </h1>
 
           {/* Subtitle / Description */}
-          <p className="text-base sm:text-lg text-stone-700 leading-relaxed font-medium max-w-2xl">
+          <p className="text-base sm:text-lg text-slate-100 leading-relaxed font-medium max-w-2xl drop-shadow-sm">
             {description}
           </p>
 
@@ -104,10 +104,10 @@ export function PageBanner({
               {stats.map((s, idx) => (
                 <div
                   key={idx}
-                  className="bg-white/90 backdrop-blur-md border border-amber-200/90 px-4 py-2 rounded-2xl flex items-center gap-2.5 shadow-sm"
+                  className="bg-stone-950/75 backdrop-blur-md border border-white/20 px-4 py-2 rounded-2xl flex items-center gap-2.5 shadow-md"
                 >
-                  <span className="font-black text-amber-700 text-sm sm:text-base">{s.value}</span>
-                  <span className="text-stone-700 font-semibold text-xs">{s.label}</span>
+                  <span className="font-black text-amber-300 text-sm sm:text-base">{s.value}</span>
+                  <span className="text-slate-200 font-semibold text-xs">{s.label}</span>
                 </div>
               ))}
             </div>
