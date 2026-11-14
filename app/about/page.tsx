@@ -194,19 +194,69 @@ export default function AboutPage() {
         badge="Our Story, Pedagogy & Leadership"
         title="Where Thinking Skills Meet"
         titleHighlight="Human Values."
-        description="GritWit is a purposeful response to an educational culture that over-values memorised answers and under-values intellectual curiosity, resilience, and compassion."
+        description="GritWit is an educator-led cognitive academy for children aged 6–9. We nurture critical thinking, logical reasoning, and heartfelt confidence through 20 joyful, interactive sessions."
         bgImage="/gritwit/about-pod-thinking.jpg"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'About GritWit' }
         ]}
         stats={[
-          { label: 'Focus Age Group', value: '6–9 Years' },
-          { label: 'Science-Backed Pillars', value: '7 Theoretical Pillars' },
-          { label: 'Intimate Pod Ratio', value: '4–6 per Cohort' }
+          { label: 'Focus Age Group', value: 'Ages 6–9' },
+          { label: 'Thinking Pods', value: '4–6 per Pod' },
+          { label: 'Core Science', value: '7 Research Pillars' },
+          { label: 'Young Thinkers', value: '500+ Empowered' }
         ]}
-        themeColor="teal"
+        themeColor="cyan"
       />
+
+      {/* 1.5 ABOUT AT A GLANCE: 3 SUMMARY METRIC CARDS (Matching Program & Other Pages) */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          
+          <div className="bg-gradient-to-br from-teal-50 to-white p-7 rounded-3xl border border-teal-200/80 shadow-sm space-y-3 relative overflow-hidden group hover:shadow-md transition-all">
+            <div className="w-12 h-12 rounded-2xl bg-teal-600 text-white flex items-center justify-center font-black shadow-md shadow-teal-600/20">
+              <Users className="w-6 h-6" />
+            </div>
+            <h3 className="text-xl font-black text-stone-900">Small Friendly Pods</h3>
+            <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              Strictly 4 to 6 children per pod so every child has space to ask questions, test ideas, and be heard with gentle educator guidance.
+            </p>
+            <div className="pt-2 text-xs font-bold text-teal-800 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-teal-600" />
+              <span>100% Active Speaking & Thinking Time</span>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-amber-50 to-white p-7 rounded-3xl border border-amber-200/80 shadow-sm space-y-3 relative overflow-hidden group hover:shadow-md transition-all">
+            <div className="w-12 h-12 rounded-2xl bg-amber-400 text-stone-950 flex items-center justify-center font-black shadow-md shadow-amber-400/20">
+              <Brain className="w-6 h-6" />
+            </div>
+            <h3 className="text-xl font-black text-stone-900">Joyful Puzzles & Logic</h3>
+            <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              No boring worksheets or rote drill. Kids discover spatial shape nets, secret ciphers, balance scales, and story clues through play.
+            </p>
+            <div className="pt-2 text-xs font-bold text-amber-900 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-amber-600" />
+              <span>15 Higher-Order Thinking Skills</span>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-orange-50 to-white p-7 rounded-3xl border border-orange-200/80 shadow-sm space-y-3 relative overflow-hidden group hover:shadow-md transition-all">
+            <div className="w-12 h-12 rounded-2xl bg-orange-500 text-white flex items-center justify-center font-black shadow-md shadow-orange-500/20">
+              <Heart className="w-6 h-6" />
+            </div>
+            <h3 className="text-xl font-black text-stone-900">Character In Every Session</h3>
+            <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+              Thinking is only half the picture. Every session connects reasoning to empathy, honesty, and the patience to try again when stuck.
+            </p>
+            <div className="pt-2 text-xs font-bold text-orange-900 flex items-center gap-1.5">
+              <CheckCircle2 className="w-4 h-4 text-orange-600" />
+              <span>Logic Meets Moral Values</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
       {/* 2. UPGRADED ABOUT SECTION: MULTI-IMAGE COMPOSITION ON LEFT, TEXT ON RIGHT */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
