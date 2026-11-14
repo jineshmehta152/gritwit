@@ -16,11 +16,12 @@ export default function HomePage() {
     <div className="space-y-16 sm:space-y-20 pb-20">
       
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-teal-950 to-slate-800 text-white pt-10 sm:pt-16 pb-0">
+      <section className="relative overflow-hidden bg-gradient-to-br from-amber-50/80 via-orange-50/40 to-teal-50/60 text-stone-900 pt-8 sm:pt-14 pb-0 border-b border-amber-100/50">
         
-        {/* Soft Ambient Glows */}
-        <div className="absolute top-0 right-1/4 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-20 left-10 w-80 h-80 bg-amber-500/15 rounded-full blur-3xl pointer-events-none" />
+        {/* Soft Sunny Playful Ambient Blobs */}
+        <div className="absolute top-0 right-1/4 w-96 h-96 bg-amber-200/40 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-20 left-10 w-80 h-80 bg-teal-200/30 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute top-1/2 left-1/3 w-64 h-64 bg-orange-200/20 rounded-full blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-8 justify-between pb-12 sm:pb-16">
@@ -29,28 +30,28 @@ export default function HomePage() {
             <div className="flex-1 text-center lg:text-left space-y-6 max-w-2xl">
               
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 bg-slate-800/90 border border-teal-400/30 px-3.5 py-1.5 rounded-full text-xs font-bold text-amber-300 shadow-md backdrop-blur-sm">
+              <div className="inline-flex items-center gap-2 bg-white/90 border border-amber-300 px-4 py-1.5 rounded-full text-xs font-bold text-stone-800 shadow-sm backdrop-blur-sm">
                 <WittyMascot className="w-5 h-5" expression="wink" animate={false} />
-                <span>Cognitive Enrichment for Children Ages 6–9</span>
+                <span>Playful Cognitive Academy for Kids Ages 6–9</span>
               </div>
 
-              {/* Shortened, Punchy Headline */}
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-[1.2]">
+              {/* Punchy, Conversational Headline */}
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-stone-900 tracking-tight leading-[1.2]">
                 Teaching Children <br />
-                <span className="bg-gradient-to-r from-teal-300 via-amber-200 to-amber-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-teal-700 via-amber-600 to-orange-600 bg-clip-text text-transparent">
                   How to Think, Not What to Think.
                 </span>
               </h1>
 
-              {/* Subtitle */}
-              <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal">
-                GritWit is an educator-led cognitive enrichment programme developing <strong>Critical Thinking</strong>, <strong>Logical Reasoning</strong>, <strong>Comprehension</strong>, and <strong>Problem Solving</strong> through 20 joyful, interactive sessions.
+              {/* Conversational Subtitle */}
+              <p className="text-base sm:text-lg text-stone-700 leading-relaxed font-normal">
+                Where curious young minds learn to solve tricky puzzles, ask great questions, and build unshakeable confidence through <strong>20 joyful, mentor-led sessions</strong>.
               </p>
 
               {/* CTA Buttons: Contact and Program */}
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                 <Link href="/contact" className="w-full sm:w-auto">
-                  <Button size="lg" className="w-full sm:w-auto bg-amber-400 hover:bg-amber-500 text-stone-950 font-black text-base px-8 py-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all group flex items-center justify-center gap-2">
+                  <Button size="lg" className="w-full sm:w-auto bg-amber-400 hover:bg-amber-500 text-stone-950 font-black text-base px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all group flex items-center justify-center gap-2 border border-amber-300">
                     <PhoneCall className="w-5 h-5 text-stone-950" />
                     <span>Book a Call / Enquire</span>
                     <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
@@ -58,65 +59,65 @@ export default function HomePage() {
                 </Link>
 
                 <Link href="/program" className="w-full sm:w-auto">
-                  <Button variant="outline" size="lg" className="w-full sm:w-auto bg-slate-800/80 hover:bg-slate-700/80 border-slate-600 text-slate-100 font-bold text-base px-7 py-6 rounded-2xl shadow-sm flex items-center justify-center gap-2">
-                    <BookMarked className="w-5 h-5 text-teal-300" />
+                  <Button variant="outline" size="lg" className="w-full sm:w-auto bg-white hover:bg-amber-50/60 border-stone-200 text-stone-800 font-bold text-base px-7 py-6 rounded-2xl shadow-sm flex items-center justify-center gap-2">
+                    <BookMarked className="w-5 h-5 text-teal-600" />
                     <span>Explore 20 Sessions</span>
                   </Button>
                 </Link>
               </div>
 
               {/* Trust Indicators */}
-              <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-xs text-slate-300">
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-teal-400" />
+              <div className="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-5 text-xs text-stone-600 font-semibold">
+                <div className="flex items-center gap-1.5 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200/80 shadow-2xs">
+                  <CheckCircle2 className="w-4 h-4 text-teal-600" />
                   <span>Small Pods (4–6 Thinkers)</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-teal-400" />
-                  <span>15 Higher-Order Skills</span>
+                <div className="flex items-center gap-1.5 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200/80 shadow-2xs">
+                  <CheckCircle2 className="w-4 h-4 text-teal-600" />
+                  <span>Hands-on Puzzles & Games</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-teal-400" />
-                  <span>Measurable Check-In & Check-Out</span>
+                <div className="flex items-center gap-1.5 bg-white/80 px-3 py-1.5 rounded-full border border-stone-200/80 shadow-2xs">
+                  <CheckCircle2 className="w-4 h-4 text-teal-600" />
+                  <span>Measurable Growth Reports</span>
                 </div>
               </div>
 
             </div>
 
-            {/* Right Visual: Photorealistic Hero Child Photo & Mascot Badge */}
+            {/* Right Visual: Photorealistic Hero Child Photo & Warm Mascot Card */}
             <div className="flex-1 w-full max-w-lg lg:max-w-none relative flex justify-center">
               <div className="relative w-full max-w-md">
                 
-                {/* Child Thinker Photograph */}
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl border-2 border-teal-400/40 bg-slate-900 group">
+                {/* Child Thinker Photograph in Warm Card Frame */}
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white group">
                   <img
                     src="/gritwit/hero-child.jpg"
                     alt="Curious child thinking with GritWit puzzles"
                     className="w-full h-[380px] sm:h-[400px] object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-900/70 via-transparent to-transparent" />
 
                   {/* Floating Mascot Badge */}
-                  <div className="absolute bottom-4 left-4 right-4 bg-slate-900/95 backdrop-blur-md p-3.5 rounded-2xl border border-slate-700/80 flex items-center gap-3 shadow-lg">
+                  <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl border border-amber-200/90 flex items-center gap-3 shadow-xl">
                     <WittyMascot className="w-12 h-12 shrink-0" expression="celebrate" bubbleText="Meet Witty!" />
                     <div className="text-xs">
-                      <span className="font-extrabold text-amber-300 block">Witty the Brain Buddy</span>
-                      <span className="text-slate-300 text-[11px] leading-snug">
-                        Turning complex reasoning into playful discovery for ages 6–9.
+                      <span className="font-extrabold text-amber-700 block">Witty the Brain Buddy</span>
+                      <span className="text-stone-600 text-[11px] leading-snug">
+                        Making big thinking fun and friendly for children ages 6–9!
                       </span>
                     </div>
                   </div>
                 </div>
 
-                {/* 4 Pillars pill bar */}
+                {/* 4 Pillars pill bar in bright sunny colors */}
                 <div className="grid grid-cols-2 gap-2 mt-3 text-xs">
-                  <div className="p-2.5 rounded-xl bg-teal-900/70 border border-teal-500/40 text-teal-200 text-center">
-                    <span className="font-bold block text-[11px]">Critical Thinking</span>
-                    <span className="text-[10px] text-teal-300">Analyse • Evaluate</span>
+                  <div className="p-2.5 rounded-xl bg-teal-50 border border-teal-200 text-teal-900 text-center shadow-2xs">
+                    <span className="font-black block text-[11px]">Critical Thinking</span>
+                    <span className="text-[10px] text-teal-700">Ask • Connect Clues</span>
                   </div>
-                  <div className="p-2.5 rounded-xl bg-slate-800/80 border border-slate-600 text-slate-200 text-center">
-                    <span className="font-bold block text-[11px]">Logical Reasoning</span>
-                    <span className="text-[10px] text-amber-300">Deduce • Infer</span>
+                  <div className="p-2.5 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-center shadow-2xs">
+                    <span className="font-black block text-[11px]">Logical Reasoning</span>
+                    <span className="text-[10px] text-amber-800">Patterns • Deduction</span>
                   </div>
                 </div>
 
@@ -146,10 +147,10 @@ export default function HomePage() {
 
       {/* 6. MEET THE EDUCATOR / FOUNDER */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-teal-950 via-stone-900 to-slate-900 text-white rounded-3xl p-8 sm:p-12 border border-teal-500/20 shadow-xl">
+        <div className="bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-teal-50/60 rounded-3xl p-8 sm:p-12 border border-amber-200/80 shadow-lg">
           <div className="flex flex-col lg:flex-row items-center gap-10">
             <div className="shrink-0 relative">
-              <div className="w-52 h-52 sm:w-60 sm:h-60 rounded-3xl overflow-hidden border-2 border-teal-400/40 shadow-2xl bg-stone-800">
+              <div className="w-52 h-52 sm:w-60 sm:h-60 rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-amber-100">
                 <img
                   src="/gritwit/educator-founder.jpg"
                   alt="GritWit Educator and Founder"
@@ -159,19 +160,19 @@ export default function HomePage() {
             </div>
 
             <div className="space-y-4 text-center lg:text-left flex-1">
-              <span className="text-xs font-bold uppercase tracking-wider text-teal-300 bg-teal-500/20 px-3 py-1 rounded-full border border-teal-400/30">
-                Founder-Led Experience
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-300">
+                A Note From Our Educator
               </span>
-              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-                Designed by Educators Who Understand How Children Actually Think
+              <h3 className="text-2xl sm:text-3xl font-black text-stone-900 tracking-tight">
+                Designed for How Children Really Learn & Wonder
               </h3>
-              <p className="text-sm text-stone-300 leading-relaxed">
-                &ldquo;I started GritWit because as both an educator and observer of current schooling, I saw how children are conditioned to hunt for the immediate &apos;right answer&apos;. When they stumble upon a tricky problem, anxiety kicks in because no one taught them how to navigate the messy, beautiful middle ground of reasoning. GritWit was born to turn that fear into pure intellectual adventure.&rdquo;
+              <p className="text-sm sm:text-base text-stone-700 leading-relaxed">
+                &ldquo;Too often, children are rushed into finding the single &apos;right answer&apos;. When they face a tricky puzzle, they feel nervous because they haven&apos;t been shown the fun of exploring clues. At GritWit, we turn that uncertainty into an exciting adventure—where guessing, testing ideas, and laughing through puzzles is how real confidence is built.&rdquo;
               </p>
-              <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs text-stone-300">
-                <span className="bg-stone-800/80 px-3 py-1.5 rounded-xl border border-stone-700">Theoretical Foundations: Bloom & Piaget</span>
-                <span className="bg-stone-800/80 px-3 py-1.5 rounded-xl border border-stone-700">Emotional Intelligence: Daniel Goleman</span>
-                <span className="bg-stone-800/80 px-3 py-1.5 rounded-xl border border-stone-700">Multiple Intelligences: Howard Gardner</span>
+              <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-xs font-bold text-stone-700">
+                <span className="bg-white px-3.5 py-1.5 rounded-xl border border-amber-200 shadow-2xs">Hands-on Puzzle Solving</span>
+                <span className="bg-white px-3.5 py-1.5 rounded-xl border border-teal-200 shadow-2xs">Curiosity over Memorization</span>
+                <span className="bg-white px-3.5 py-1.5 rounded-xl border border-amber-200 shadow-2xs">Confidence & Character Building</span>
               </div>
             </div>
           </div>

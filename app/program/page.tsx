@@ -242,14 +242,14 @@ export default function ProgramPage() {
               </div>
 
               {/* Sample Thinking Prompt Box */}
-              <div className="p-5 rounded-2xl bg-slate-950 text-white text-xs space-y-2 shadow-inner">
-                <span className="text-[10px] font-black uppercase tracking-wider text-amber-400 block flex items-center gap-1.5">
-                  <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+              <div className="p-5 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50/50 text-stone-900 text-xs space-y-2 border border-amber-200/90 shadow-sm">
+                <span className="text-[10px] font-black uppercase tracking-wider text-amber-800 block flex items-center gap-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-600" />
                   Sample Thinking Challenge:
                 </span>
-                <p className="italic text-stone-200 text-sm">&ldquo;{activeSkill.sampleChallenge.question}&rdquo;</p>
-                <div className="pt-2 border-t border-slate-800 text-teal-300 text-xs leading-relaxed">
-                  <strong className="text-amber-300">The GritWit Way:</strong> {activeSkill.sampleChallenge.thinkingStep}
+                <p className="italic text-stone-800 text-sm font-semibold">&ldquo;{activeSkill.sampleChallenge.question}&rdquo;</p>
+                <div className="pt-2 border-t border-amber-200/70 text-stone-700 text-xs leading-relaxed">
+                  <strong className="text-amber-900 font-black">The GritWit Way:</strong> {activeSkill.sampleChallenge.thinkingStep}
                 </div>
               </div>
 

@@ -9,79 +9,75 @@ export function ProgrammeJourneySection() {
       stepNumber: "01",
       sessionTag: "SESSION 01",
       title: "Thinker Check-In",
-      subtitle: "Baseline Discovery",
-      desc: "Low-stress cognitive pre-assessment discovering your child's baseline problem-solving instincts across 4 domains. Real data, zero pressure.",
+      subtitle: "Friendly Discovery",
+      desc: "A fun, low-stress puzzle game where we see how your child likes to solve problems. No tests, no grades—just pure discovery!",
       icon: Brain,
       accentColor: "teal",
-      bgGradient: "from-teal-500/10 via-white to-white",
       badgeColor: "bg-teal-100 text-teal-800 border-teal-200",
-      iconBg: "bg-teal-700 text-white shadow-teal-700/20",
+      iconBg: "bg-teal-600 text-white shadow-teal-600/20",
       borderHover: "hover:border-teal-400",
-      takeaway: "Personalized Baseline Report"
+      takeaway: "Personalized Discovery Report"
     },
     {
       stepNumber: "02",
       sessionTag: "15 CORE SKILLS",
-      title: "Deep Thinking Pods",
-      subtitle: "Higher-Order Reasoning",
-      desc: "Small interactive pods (4–6 children) tackling visual analogies, ciphers, Fermi estimation, spatial origami nets, and verbal inferences.",
+      title: "Playful Pods",
+      subtitle: "Small Group Adventures",
+      desc: "4 to 6 kids team up with an educator to tackle colorful visual puzzles, shape mysteries, secret ciphers, and balance games.",
       icon: BookOpen,
-      accentColor: "sky",
-      bgGradient: "from-sky-500/10 via-white to-white",
-      badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
-      iconBg: "bg-sky-600 text-white shadow-sky-600/20",
-      borderHover: "hover:border-sky-400",
-      takeaway: "Certified Educator Guidance"
+      accentColor: "amber",
+      badgeColor: "bg-amber-100 text-amber-900 border-amber-200",
+      iconBg: "bg-amber-500 text-stone-950 shadow-amber-500/20",
+      borderHover: "hover:border-amber-400",
+      takeaway: "Dedicated Educator Guidance"
     },
     {
       stepNumber: "03",
       sessionTag: "SESSIONS 7, 13 & 19",
-      title: "Witty's Challenge Days",
-      subtitle: "Gamified Quests & Escapes",
-      desc: "Zero lectures! Pure thinking fun. Children synthesize accumulated skills in gamified escape rooms, mystery vaults, and logic puzzles.",
+      title: "Witty's Quest Days",
+      subtitle: "Fun Mystery Challenges",
+      desc: "No lectures ever! Kids use all their puzzle-cracking superpowers in escape quests, riddle vaults, and team treasure hunts.",
       icon: Sparkles,
-      accentColor: "amber",
-      bgGradient: "from-amber-500/10 via-white to-white",
-      badgeColor: "bg-amber-100 text-amber-900 border-amber-200",
-      iconBg: "bg-amber-500 text-stone-950 shadow-amber-500/20",
-      borderHover: "hover:border-amber-400",
-      takeaway: "Pure Joyful Application"
+      accentColor: "orange",
+      badgeColor: "bg-orange-100 text-orange-900 border-orange-200",
+      iconBg: "bg-orange-500 text-white shadow-orange-500/20",
+      borderHover: "hover:border-orange-400",
+      takeaway: "Big Celebration & Aha! Moments"
     },
     {
       stepNumber: "04",
       sessionTag: "SESSION 20",
-      title: "Parent Connect & Growth",
-      subtitle: "Final Leap Validation",
-      desc: "Check-Out assessment demonstrating clear cognitive expansion. Parents join to celebrate achievements and receive lifelong growth roadmaps.",
+      title: "Parent Celebration",
+      subtitle: "See Their Growth",
+      desc: "Parents join in! See how much more confident your child has become, celebrate their leap, and get fun games to play at home.",
       icon: Award,
       accentColor: "emerald",
-      bgGradient: "from-emerald-500/10 via-white to-white",
       badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
-      iconBg: "bg-emerald-700 text-white shadow-emerald-700/20",
+      iconBg: "bg-emerald-600 text-white shadow-emerald-600/20",
       borderHover: "hover:border-emerald-400",
-      takeaway: "Graduation & Home Toolkit"
+      takeaway: "Graduation & Home Game Kit"
     }
   ]
 
   return (
-    <section className="py-20 sm:py-24 bg-gradient-to-b from-stone-50/50 via-white to-stone-50/30 relative">
+    <section className="py-20 sm:py-24 bg-gradient-to-b from-stone-50/50 via-amber-50/20 to-stone-50/30 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center gap-2 bg-teal-50 border border-teal-200/80 px-4 py-1.5 rounded-full text-xs font-bold text-teal-800 shadow-sm">
-            <span className="text-amber-500 font-bold">✦</span>
-            <span>20 Sessions • 3 Sessions Per Week • Small Pods</span>
+          <div className="inline-flex items-center gap-2 bg-amber-100/80 border border-amber-300 px-4 py-1.5 rounded-full text-xs font-bold text-amber-900 shadow-xs">
+            <span className="text-amber-600 font-bold">✦</span>
+            <span>20 Sessions • 3 Times a Week • 4–6 Kids per Pod</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-stone-900 tracking-tight leading-tight">
-            How The GritWit Journey{' '}
+            How The GritWit Adventure{' '}
             <span className="inline-block bg-amber-400 text-stone-950 px-3.5 py-0.5 rounded-2xl font-black shadow-sm transform -rotate-1 border border-amber-300">
               Unfolds
             </span>
           </h2>
           <p className="text-base text-stone-600 leading-relaxed max-w-2xl mx-auto">
-            A carefully scaffolded 20-session cognitive journey designed for sustained intellectual growth, measurable confidence, and enduring human values.
+            A step-by-step journey designed for big curiosity, joyful problem-solving, and lifelong thinking confidence.
           </p>
         </div>
 
@@ -89,7 +85,7 @@ export function ProgrammeJourneySection() {
         <div className="relative">
           
           {/* Subtle Horizontal Connecting Line for Desktop */}
-          <div className="hidden lg:block absolute top-12 left-16 right-16 h-0.5 bg-gradient-to-r from-teal-200 via-amber-200 to-emerald-200 -z-0" />
+          <div className="hidden lg:block absolute top-12 left-16 right-16 h-0.5 bg-gradient-to-r from-teal-200 via-amber-200 to-orange-200 -z-0" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 relative z-10">
             {steps.map((step, idx) => {
@@ -98,29 +94,29 @@ export function ProgrammeJourneySection() {
               return (
                 <div
                   key={idx}
-                  className={`group relative bg-white rounded-[32px] p-6 sm:p-7 shadow-[0_8px_30px_rgb(0,0,0,0.05)] border-2 border-stone-100 ${step.borderHover} transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col justify-between`}
+                  className={`group relative bg-white rounded-[32px] p-6 sm:p-7 shadow-[0_8px_30px_rgb(0,0,0,0.05)] border-2 border-amber-100/80 ${step.borderHover} transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 flex flex-col justify-between`}
                 >
-                  <div className="space-y-5">
+                  <div className="space-y-4">
                     
                     {/* Top Row: Icon Circle + Step Number */}
                     <div className="flex items-center justify-between">
-                      <div className={`w-14 h-14 rounded-2xl ${step.iconBg} flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110`}>
+                      <div className={`w-14 h-14 rounded-2xl ${step.iconBg} flex items-center justify-center shadow-md transition-transform duration-300 group-hover:scale-110`}>
                         <Icon className="w-7 h-7 stroke-[2.2]" />
                       </div>
-                      <span className="text-2xl font-black text-stone-200 group-hover:text-stone-400 transition-colors font-mono">
+                      <span className="text-2xl font-black text-stone-300 group-hover:text-amber-500 transition-colors font-mono">
                         {step.stepNumber}
                       </span>
                     </div>
 
                     {/* Tag Badge */}
                     <div>
-                      <span className={`inline-block text-[10px] font-black tracking-wider uppercase px-3 py-1 rounded-full border shadow-xs ${step.badgeColor}`}>
+                      <span className={`inline-block text-[10px] font-black tracking-wider uppercase px-3 py-1 rounded-full border shadow-2xs ${step.badgeColor}`}>
                         {step.sessionTag}
                       </span>
                     </div>
 
                     {/* Title & Subtitle */}
-                    <div className="space-y-1">
+                    <div className="space-y-0.5">
                       <h3 className="text-xl font-black text-stone-900 group-hover:text-teal-700 transition-colors leading-tight">
                         {step.title}
                       </h3>
@@ -137,7 +133,7 @@ export function ProgrammeJourneySection() {
                   </div>
 
                   {/* Bottom Highlight Pill */}
-                  <div className="mt-6 pt-4 border-t border-stone-100 flex items-center gap-2 text-[11px] font-semibold text-stone-700">
+                  <div className="mt-5 pt-3.5 border-t border-stone-100 flex items-center gap-2 text-[11px] font-semibold text-stone-700">
                     <CheckCircle2 className="w-4 h-4 text-teal-600 shrink-0" />
                     <span>{step.takeaway}</span>
                   </div>
@@ -152,9 +148,9 @@ export function ProgrammeJourneySection() {
         <div className="mt-12 text-center">
           <Link
             href="/program"
-            className="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold text-teal-700 hover:text-teal-900 bg-teal-50/80 hover:bg-teal-100/80 border border-teal-200 px-6 py-3 rounded-full transition-all shadow-sm"
+            className="inline-flex items-center gap-2 text-xs sm:text-sm font-extrabold text-stone-900 hover:text-stone-950 bg-amber-400 hover:bg-amber-500 border border-amber-300 px-6 py-3 rounded-full transition-all shadow-sm"
           >
-            <span>View Complete 20-Session Day-by-Day Syllabus</span>
+            <span>See the 20-Session Day-by-Day Schedule</span>
             <ArrowRight className="w-4 h-4 ml-0.5" />
           </Link>
         </div>
@@ -163,4 +159,3 @@ export function ProgrammeJourneySection() {
     </section>
   )
 }
-

@@ -43,59 +43,59 @@ export default function AboutPage() {
   const theoreticalPillars = [
     {
       number: "01",
-      title: "Bloom's Revised Taxonomy",
-      tag: "Higher-Order Thinking",
-      desc: "Transcending passive memorisation towards deep analysis, critical evaluation, and inventive hypothesis testing.",
+      title: "Learning by Doing & Exploring",
+      tag: "Hands-on Puzzles",
+      desc: "Moving past memorizing facts into analyzing, trying ideas, and testing why things work.",
       icon: Layers,
-      highlight: "Analysis & Synthesis over Recall"
+      highlight: "Figuring it out, not memorizing"
     },
     {
       number: "02",
-      title: "Piaget's Concrete Operational Stage",
-      tag: "Cognitive Milestones",
-      desc: "Designed specifically for ages 6–9 when children make the neural shift into conservation, spatial nets, and reversible logic.",
+      title: "Designed Just for Ages 6–9",
+      tag: "The Golden Age",
+      desc: "Tailored for the exact age when children's brains make the leap into logical steps, visual shapes, and mental flip-turns.",
       icon: Brain,
-      highlight: "Spatial & Logical Reversibility"
+      highlight: "Step-by-step logical reasoning"
     },
     {
       number: "03",
-      title: "Gardner's Multiple Intelligences",
-      tag: "Multi-Modal Reasoning",
-      desc: "Equally stimulating visual-spatial puzzles, verbal analogies, logical syllogisms, and introspective metacognition.",
+      title: "Different Ways to Think",
+      tag: "Words, Pictures & Logic",
+      desc: "Every kid shines differently: visual shape puzzles, word riddles, secret codes, and story clues.",
       icon: Lightbulb,
-      highlight: "4 Complementary Modalities"
+      highlight: "4 Complementary thinking styles"
     },
     {
       number: "04",
-      title: "Goleman's Emotional Intelligence",
-      tag: "Self-Regulation",
-      desc: "Nurturing emotional patience under ambiguity, impulse control, and compassionate collaboration during group quests.",
+      title: "Staying Calm When Stuck",
+      tag: "Emotional Patience",
+      desc: "Teaching kids that being stuck isn't bad—it's just a sign that a fun breakthrough is right around the corner.",
       icon: Heart,
-      highlight: "Frustration Tolerance & Calm"
+      highlight: "Patience & friendly teamwork"
     },
     {
       number: "05",
-      title: "Vygotsky's Scaffolding & ZPD",
-      tag: "Educator Guidance",
-      desc: "Mentoring children in the Zone of Proximal Development—just beyond current comfort, with precision prompts that prevent overwhelm.",
+      title: "Gentle Educator Guiding",
+      tag: "Just the Right Challenge",
+      desc: "Our mentors gently scaffold puzzles so tasks are exciting and stretchy, but never overwhelming.",
       icon: Compass,
-      highlight: "Optimal Challenge Balance"
+      highlight: "Just-right nudge at each step"
     },
     {
       number: "06",
-      title: "Carol Dweck's Growth Mindset",
-      tag: "Intellectual Courage",
-      desc: "Celebrating smart missteps as critical clues; reframing struggle as the exact neurological moment when new synapses form.",
+      title: "Mistakes are Just Clues!",
+      tag: "Growth Mindset",
+      desc: "Celebrating wrong turns as helpful clues that guide us closer to cracking the secret puzzle.",
       icon: Flame,
-      highlight: "Embracing Cognitive Struggle"
+      highlight: "Courage to try without fear"
     },
     {
       number: "07",
-      title: "Socratic Dialogic Inquiry",
-      tag: "Curiosity Loops",
-      desc: "Educators who never just give away answers, but ask surgical, thought-provoking questions that spark children's own eureka moments.",
+      title: "Asking Great Questions",
+      tag: "Curiosity Sparks",
+      desc: "Mentors who don't just give answers, but ask friendly questions that spark your child's own 'I did it!' moment.",
       icon: MessageSquareQuote,
-      highlight: "Discovery-Led Questioning"
+      highlight: "The joy of personal discovery"
     }
   ]
 
@@ -360,41 +360,41 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           
           {/* Vision Card */}
-          <div className="relative rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-slate-900 via-teal-950 to-slate-950 text-white shadow-2xl overflow-hidden border border-teal-500/30 flex flex-col justify-between">
-            <div className="absolute top-0 right-0 w-72 h-72 bg-teal-500/15 rounded-full blur-3xl pointer-events-none" />
+          <div className="relative rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-teal-50 via-white to-amber-50/60 text-stone-900 shadow-xl overflow-hidden border border-teal-200/90 flex flex-col justify-between">
+            <div className="absolute top-0 right-0 w-72 h-72 bg-teal-400/15 rounded-full blur-3xl pointer-events-none" />
             <div className="relative z-10 space-y-6">
               <div className="flex items-center justify-between">
-                <div className="w-14 h-14 rounded-2xl bg-teal-800/80 border border-teal-400/40 flex items-center justify-center text-teal-300 shadow-md">
+                <div className="w-14 h-14 rounded-2xl bg-teal-600 flex items-center justify-center text-white shadow-md">
                   <Eye className="w-7 h-7" />
                 </div>
-                <span className="text-xs font-black uppercase tracking-widest text-teal-300 bg-teal-900/60 border border-teal-700/60 px-3 py-1 rounded-full">
+                <span className="text-xs font-black uppercase tracking-widest text-teal-800 bg-teal-100 border border-teal-300 px-3 py-1 rounded-full">
                   Our Long-Term Vision
                 </span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-black text-white leading-tight">
+              <h2 className="text-2xl sm:text-3xl font-black text-stone-900 leading-tight">
                 A generation of children with the mental agility to solve tomorrow’s problems, and the empathy to serve the world kindly.
               </h2>
               
-              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                We envision a world where a child’s intellectual worth is not measured by test speed or rote recall, but by their capacity to question assumptions, persevere through ambiguity, and bring empathetic clarity to complex situations.
+              <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
+                We envision a world where a child’s intelligence is not measured by test speed or memorised answers, but by their curiosity, kindness, and bravery when facing tricky new challenges.
               </p>
 
-              <div className="grid grid-cols-2 gap-4 pt-4 border-t border-teal-800/60">
+              <div className="grid grid-cols-2 gap-4 pt-4 border-t border-teal-100">
                 <div>
-                  <span className="block text-2xl font-black text-amber-300">10,000+</span>
-                  <span className="text-xs text-slate-300">Target Thinkers by 2028</span>
+                  <span className="block text-2xl font-black text-amber-700">10,000+</span>
+                  <span className="text-xs text-stone-600 font-semibold">Happy Young Thinkers by 2028</span>
                 </div>
                 <div>
-                  <span className="block text-2xl font-black text-teal-300">100%</span>
-                  <span className="text-xs text-slate-300">Educator-Led Pods</span>
+                  <span className="block text-2xl font-black text-teal-800">100%</span>
+                  <span className="text-xs text-stone-600 font-semibold">Educator-Led Friendly Pods</span>
                 </div>
               </div>
             </div>
 
-            <div className="relative z-10 pt-6 mt-6 border-t border-slate-800 flex items-center gap-2 text-xs font-bold text-amber-300">
-              <Sparkles className="w-4 h-4 text-amber-400" />
-              <span>Nurturing Curiosity • Critical Reasoning • Emotional Grace</span>
+            <div className="relative z-10 pt-6 mt-6 border-t border-teal-100 flex items-center gap-2 text-xs font-bold text-teal-900">
+              <Sparkles className="w-4 h-4 text-amber-500" />
+              <span>Nurturing Curiosity • Clear Thinking • Big Hearts</span>
             </div>
           </div>
 
@@ -559,17 +559,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 6. MEET THE FOUNDER SECTION (UPGRADED WITH PHILOSOPHICAL DEPTH) */}
+      {/* 6. MEET THE FOUNDER SECTION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-stone-900 via-teal-950 to-slate-900 rounded-3xl p-8 sm:p-14 text-white shadow-2xl border border-teal-700/40 relative overflow-hidden">
+        <div className="bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-teal-50/60 rounded-3xl p-8 sm:p-14 text-stone-900 shadow-xl border border-amber-200/90 relative overflow-hidden">
           
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-amber-400/20 rounded-full blur-3xl pointer-events-none" />
           
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             
             {/* Founder Photo & Accreditation */}
             <div className="lg:col-span-5 flex flex-col items-center text-center">
-              <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-4 border-amber-400 shadow-2xl bg-stone-800 group">
+              <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-amber-100 group">
                 <img
                   src="/gritwit/educator-founder.jpg"
                   alt="Founder and Lead Educator at GritWit"
@@ -578,10 +578,10 @@ export default function AboutPage() {
               </div>
 
               <div className="mt-5 space-y-1">
-                <h3 className="text-2xl font-black text-white">Lead Educator & Founder</h3>
-                <p className="text-amber-300 font-bold text-sm">Curriculum Architect & Cognitive Specialist</p>
-                <div className="pt-2 flex items-center justify-center gap-2 text-xs text-slate-300">
-                  <GraduationCap className="w-4 h-4 text-teal-400" />
+                <h3 className="text-2xl font-black text-stone-900">Lead Educator & Founder</h3>
+                <p className="text-amber-800 font-extrabold text-sm">Curriculum Architect & Cognitive Specialist</p>
+                <div className="pt-2 flex items-center justify-center gap-2 text-xs font-semibold text-stone-600">
+                  <GraduationCap className="w-4 h-4 text-teal-600" />
                   <span>12+ Years in Primary Pedagogy & Cognitive Design</span>
                 </div>
               </div>
@@ -589,36 +589,36 @@ export default function AboutPage() {
 
             {/* Founder Message & Story */}
             <div className="lg:col-span-7 space-y-5">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-900/80 border border-teal-400/40 text-xs font-bold text-amber-300">
-                <Sparkles className="w-4 h-4" />
-                <span>Founder&apos;s Personal Narrative</span>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-amber-300 text-xs font-bold text-amber-900 shadow-2xs">
+                <Sparkles className="w-4 h-4 text-amber-500" />
+                <span>Founder&apos;s Personal Note</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight leading-tight">
                 “Why I built GritWit — and what children truly need today.”
               </h2>
 
-              <div className="space-y-4 text-slate-200 text-sm sm:text-base leading-relaxed font-normal">
+              <div className="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed font-normal">
                 <p>
-                  Having spent over a decade teaching in leading classrooms, I continually witnessed the same heartbreaking pattern: bright, imaginative children being conditioned to think that intelligence simply meant memorising pre-digested answers for the next standardised test.
+                  Having spent over a decade teaching in classrooms, I continually witnessed the same pattern: bright, imaginative children being told that intelligence just means memorizing fast answers for a test.
                 </p>
                 <p>
-                  When children are told exactly what to think and given formulas before questions, their natural curiosity atrophies. When faced with an unfamiliar puzzle, they freeze in fear of being &apos;wrong&apos;.
+                  When children are handed formulas before they have a chance to explore, their natural curiosity shrinks. When they face a tricky, unfamiliar problem, they freeze out of fear of making a mistake.
                 </p>
                 <p>
-                  I created GritWit to restore what schooling often leaves behind: the thrill of the struggle, the joy of intellectual courage, and the gentle guidance of an educator who says: <em>&ldquo;You don&apos;t know the answer yet — let&apos;s think about it together.&rdquo;</em>
+                  I created GritWit to bring back the pure joy of thinking: the thrill of cracking a puzzle, the courage to try new ideas, and the gentle guidance of a mentor who says: <em>&ldquo;You haven&apos;t solved it yet — let&apos;s explore it together!&rdquo;</em>
                 </p>
               </div>
 
               <div className="pt-4 flex flex-wrap items-center gap-4">
                 <Link href="/contact">
-                  <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-stone-950 font-black text-sm px-7 py-5 rounded-2xl shadow-xl flex items-center gap-2">
-                    <span>Speak Directly with the Founder</span>
+                  <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-stone-950 font-black text-sm px-7 py-5 rounded-2xl shadow-md border border-amber-300 flex items-center gap-2">
+                    <span>Speak Directly with an Educator</span>
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 </Link>
                 <Link href="/program">
-                  <Button size="lg" variant="outline" className="border-slate-600 bg-slate-800/80 hover:bg-slate-700/80 text-white font-bold text-sm px-6 py-5 rounded-2xl">
+                  <Button size="lg" variant="outline" className="border-stone-300 bg-white hover:bg-amber-50/50 text-stone-800 font-bold text-sm px-6 py-5 rounded-2xl">
                     <span>Explore 20-Session Plan</span>
                   </Button>
                 </Link>
@@ -685,17 +685,17 @@ export default function AboutPage() {
           </div>
 
           {/* Special 7th Pillar Banner */}
-          <div className="bg-gradient-to-r from-teal-800 via-teal-900 to-slate-900 text-white p-6 sm:p-10 rounded-3xl border border-teal-600/50 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+          <div className="bg-gradient-to-r from-amber-400 via-amber-300 to-teal-200 text-stone-950 p-6 sm:p-10 rounded-3xl border border-amber-300/80 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
             <div className="space-y-2 max-w-2xl">
-              <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-amber-300 bg-teal-950/70 border border-teal-500/40 px-3 py-1 rounded-full">
-                <MessageSquareQuote className="w-3.5 h-3.5" />
+              <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-amber-950 bg-white/80 border border-amber-400 px-3 py-1 rounded-full">
+                <MessageSquareQuote className="w-3.5 h-3.5 text-amber-600" />
                 <span>Pillar 07 • Socratic Dialogic Inquiry</span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-black text-white">
+              <h3 className="text-xl sm:text-2xl font-black text-stone-950">
                 Educators Who Ask Great Questions, Never Just Hand Out Answers
               </h3>
-              <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                By guiding students through counter-examples and inquiry loops, children discover cognitive pride: the exhilarating feeling that *they* solved the riddle themselves.
+              <p className="text-xs sm:text-sm text-stone-900 font-medium leading-relaxed">
+                By guiding students through playful hints and wonder questions, children discover real cognitive confidence: the proud feeling that *they* solved the puzzle on their own!
               </p>
             </div>
             <Link href="/program" className="shrink-0">
