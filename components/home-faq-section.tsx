@@ -26,7 +26,7 @@ export function HomeFaqSection() {
       questions: [
         {
           question: "Why is GritWit specifically designed for children aged 6 to 9?",
-          answer: "Between ages 6 and 9 (the concrete operational stage identified by Jean Piaget), a child's brain undergoes a pivotal leap from observational copying to structured logic and mental reversibility. Developing foundational reasoning during this formative window prevents fear of complex problems and builds lifelong intellectual self-reliance."
+          answer: "Between ages 6 and 9, a child's brain goes through an exciting leap: they start moving past pure visual guessing into connecting clues, spotting sequences, and testing ideas step by step. Giving them fun, puzzle-based challenges during these years helps them build a calm, confident way of thinking that stays with them forever."
         },
         {
           question: "How does GritWit differ from a regular tuition centre or coding class?",

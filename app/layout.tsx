@@ -7,21 +7,18 @@ import { FloatingWhatsApp } from '@/components/whatsapp-button';
 
 export const metadata: Metadata = {
   title: {
-    default: 'GritWit | Premium Cognitive Enrichment for Children Ages 6–9',
-    template: '%s | GritWit Cognitive Academy',
+    default: 'GritWit | A Thoughtful, Playful Learning Space for Children Ages 6–9',
+    template: '%s | GritWit',
   },
   description:
-    'Where thinking skills meet human values. GritWit nurtures critical thinking, logical reasoning, comprehension, and problem solving in children aged 6–9 through educator-led interactive pods.',
+    'Where thinking skills meet kind hearts. GritWit nurtures critical thinking, logical reasoning, comprehension, and problem solving in children aged 6–9 through educator-led interactive pods.',
   keywords: [
     'GritWit',
-    'Cognitive Enrichment for Kids',
+    'Thinking Skills for Kids',
     'Critical Thinking Children',
     'Logical Reasoning Kids 6-9',
-    'Higher Order Thinking Skills',
     'Problem Solving for Children',
-    'Cognitive Skills Academy',
     'Witty Mascot GritWit',
-    'Bloom Taxonomy for Kids',
     'Parent Connect GritWit',
   ],
   metadataBase: new URL('https://www.gritwit.com'),
@@ -36,10 +33,10 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: 'GritWit — Where Thinking Skills Meet Human Values',
-    description: "Don't just teach children the right answer. Teach them how to think their way towards it. 20 sessions of cognitive discovery.",
+    title: 'GritWit — Where Thinking Meets Kind Hearts',
+    description: "Don't just teach children the right answer. Teach them how to think their way towards it. 20 sessions of playful discovery.",
     url: 'https://www.gritwit.com',
-    siteName: 'GritWit Cognitive Academy',
+    siteName: 'GritWit',
     locale: 'en_IN',
     type: 'website',
   },

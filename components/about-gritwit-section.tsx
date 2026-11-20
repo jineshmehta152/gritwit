@@ -67,7 +67,7 @@ export function AboutGritWitSection() {
 
             {/* Narrative Paragraph - Conversational */}
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-              At <strong className="text-stone-900">GritWit Academy</strong>, we believe every child has a brilliant detective inside them. Instead of memorising answers for tests, children ages 6–9 discover how to look at clues, test different paths, and celebrate &ldquo;aha!&rdquo; breakthrough moments in joyful, small groups of 4 to 6 friends.
+              At <strong className="text-stone-900">GritWit</strong>, we believe every child has a brilliant detective inside them. Instead of memorising answers for tests, children ages 6–9 discover how to look at clues, test different paths, and celebrate &ldquo;aha!&rdquo; breakthrough moments in joyful, small groups of 4 to 6 friends.
             </p>
 
             {/* 4 Feature Badges Grid */}

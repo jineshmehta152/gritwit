@@ -165,7 +165,7 @@ export const PROGRAMME_STRUCTURE: {
   },
   {
     partTitle: "Part 3 — Applied Problem Solving & Synthesis",
-    tagline: "Mathematical heuristics, spatial manipulation, data sufficiency, and real-world application",
+    tagline: "Hands-on shape puzzles, smart ballpark clues, and real-world mysteries",
     color: "from-purple-500/10 to-indigo-500/10 border-purple-200",
     sessions: [
       {
