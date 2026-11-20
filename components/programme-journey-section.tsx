@@ -77,7 +77,7 @@ export function ProgrammeJourneySection() {
             </span>
           </h2>
           <p className="text-base text-stone-600 leading-relaxed max-w-2xl mx-auto">
-            A step-by-step journey designed for big curiosity, joyful problem-solving, and lifelong thinking confidence.
+            A step-by-step journey designed for big curiosity, joyful problem-solving, and growing confidence that stays with your child.
           </p>
         </div>
 

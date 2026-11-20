@@ -84,7 +84,7 @@ export function SkillsOverviewSection() {
             </span>
           </h2>
           <p className="text-base text-stone-600 leading-relaxed max-w-2xl mx-auto">
-            Hands-on adventures designed to build mental independence, logical deduction, and fearless problem-solving in children aged 6 to 9.
+            Hands-on adventures designed to build independent thinking, curious observation, and calm confidence in children aged 6 to 9.
           </p>
         </div>
 

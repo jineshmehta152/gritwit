@@ -6,17 +6,14 @@ import {
   Brain, 
   Heart, 
   Compass, 
-  ShieldCheck, 
   CheckCircle2, 
   ArrowRight, 
   Target, 
   Eye, 
   GraduationCap, 
   Users, 
-  Award, 
   Lightbulb, 
   BookOpen, 
-  Clock, 
   Star,
   CheckCircle,
   Puzzle,
@@ -26,135 +23,132 @@ import {
   Check,
   X,
   Layers,
-  HelpCircle,
-  PlayCircle,
-  Shield,
-  Zap
+  HelpCircle
 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { PageBanner } from '@/components/page-banner'
 
 export const metadata = {
-  title: 'About GritWit | Vision, Mission, Founder & Cognitive Philosophy',
-  description: 'Discover GritWit’s founding story, vision, mission, educator-led pedagogy, developmental science, and our dedication to building independent thinkers aged 6–9.',
+  title: 'About GritWit | A Thoughtful, Playful Learning Space for Children',
+  description: 'Meet the educator behind GritWit, our child-centered philosophy, and why we created a joyful thinking space where kids aged 6–9 learn how to explore, wonder, and think for themselves.',
 }
 
 export default function AboutPage() {
-  const theoreticalPillars = [
+  const learningPillars = [
     {
       number: "01",
       title: "Learning by Doing & Exploring",
       tag: "Hands-on Puzzles",
-      desc: "Moving past memorizing facts into analyzing, trying ideas, and testing why things work.",
+      desc: "Children learn best when they can touch, test, and try things for themselves—not just listen to someone explain an answer.",
       icon: Layers,
-      highlight: "Figuring it out, not memorizing"
+      highlight: "Figuring it out through play"
     },
     {
       number: "02",
       title: "Designed Just for Ages 6–9",
-      tag: "The Golden Age",
-      desc: "Tailored for the exact age when children's brains make the leap into logical steps, visual shapes, and mental flip-turns.",
+      tag: "The Wonder Years",
+      desc: "Tailored for the wonderful age when a child's brain begins to connect clues, spot sequences, and turn ideas around in their head.",
       icon: Brain,
-      highlight: "Step-by-step logical reasoning"
+      highlight: "When logical thinking first clicks"
     },
     {
       number: "03",
-      title: "Different Ways to Think",
-      tag: "Words, Pictures & Logic",
-      desc: "Every kid shines differently: visual shape puzzles, word riddles, secret codes, and story clues.",
+      title: "Every Child Thinks Differently",
+      tag: "Words, Shapes & Logic",
+      desc: "Some kids love picture riddles, others love word games or secret codes. We celebrate and build on each child's natural style.",
       icon: Lightbulb,
-      highlight: "4 Complementary thinking styles"
+      highlight: "Multiple ways to shine"
     },
     {
       number: "04",
       title: "Staying Calm When Stuck",
-      tag: "Emotional Patience",
-      desc: "Teaching kids that being stuck isn't bad—it's just a sign that a fun breakthrough is right around the corner.",
+      tag: "Patience & Grit",
+      desc: "Getting stuck isn't a problem—it's a sign that a fun discovery is about to happen. We help kids take a breath and try another angle.",
       icon: Heart,
-      highlight: "Patience & friendly teamwork"
+      highlight: "Patience and steady effort"
     },
     {
       number: "05",
-      title: "Gentle Educator Guiding",
-      tag: "Just the Right Challenge",
-      desc: "Our mentors gently scaffold puzzles so tasks are exciting and stretchy, but never overwhelming.",
+      title: "A Gentle Nudge, Never the Answer",
+      tag: "Caring Mentorship",
+      desc: "Instead of handing over solutions, our educators offer a warm hint that helps your child take the next step on their own.",
       icon: Compass,
-      highlight: "Just-right nudge at each step"
+      highlight: "Just-right guidance at every step"
     },
     {
       number: "06",
       title: "Mistakes are Just Clues!",
-      tag: "Growth Mindset",
-      desc: "Celebrating wrong turns as helpful clues that guide us closer to cracking the secret puzzle.",
+      tag: "Courage to Try",
+      desc: "When a guess doesn't work, we celebrate it as a helpful clue. That takes away fear and turns every puzzle into a playful adventure.",
       icon: Flame,
-      highlight: "Courage to try without fear"
+      highlight: "Trying with a smile"
     },
     {
       number: "07",
-      title: "Asking Great Questions",
+      title: "Asking Good Questions",
       tag: "Curiosity Sparks",
-      desc: "Mentors who don't just give answers, but ask friendly questions that spark your child's own 'I did it!' moment.",
+      desc: "We encourage questions like 'What if?' and 'Why do you think so?' so children experience the joy of saying: 'I figured it out!'",
       icon: MessageSquareQuote,
-      highlight: "The joy of personal discovery"
+      highlight: "The pure joy of 'I did it!'"
     }
   ]
 
   const coreValues = [
     {
       icon: Brain,
-      title: "Intellectual Courage",
-      subtitle: "Comfort in the Unknown",
-      description: "Empowering children to approach complex, unfamiliar challenges with open curiosity and resilience rather than anxiety."
+      title: "Courage to Wonder",
+      subtitle: "Trying Without Fear",
+      description: "Helping children look at an unfamiliar puzzle with excitement and playful curiosity rather than feeling nervous."
     },
     {
       icon: Heart,
-      title: "Empathy & Character",
+      title: "Kindness & Character",
       subtitle: "Character Corner",
-      description: "Integrating moral reasoning, perspective-taking, and kindness into every single session alongside logical challenges."
+      description: "Talking about empathy, fairness, and honesty in every single session, right alongside our thinking games."
     },
     {
       icon: Lightbulb,
-      title: "Playful Ingenuity",
-      subtitle: "Joyful Discovery",
-      description: "Cognitive problem solving framed like thrilling detective mysteries, filled with joyful breakthroughs and 'Aha!' smiles."
+      title: "Joyful Discovery",
+      subtitle: "Smiles in Every Pod",
+      description: "Puzzles framed like mini mystery quests, full of happy breakthroughs, friendly laughter, and 'Aha!' moments."
     },
     {
-      icon: ShieldCheck,
-      title: "Pedagogical Integrity",
-      subtitle: "Educator-Led Only",
-      description: "Strictly capped pods of 4–6 thinkers led live by passionate primary educators, never pre-recorded videos or AI avatars."
+      icon: Users,
+      title: "Educator-Led Only",
+      subtitle: "Real Human Connection",
+      description: "Small friendly pods of 4 to 6 children guided live by a caring educator—never pre-recorded videos or automated apps."
     }
   ]
 
   const comparisonPoints = [
     {
-      feature: "Core Focus",
-      traditional: "Repetitive worksheets & syllabus test drills",
-      gritwit: "Higher-order reasoning, deep puzzles & moral character",
+      feature: "What We Focus On",
+      traditional: "Memorizing formulas and repetitive test worksheets",
+      gritwit: "Curious thinking, hands-on puzzles, and moral character",
       icon: Brain
     },
     {
-      feature: "Student Attention Ratio",
-      traditional: "25–35 children in crowded lecture rooms",
-      gritwit: "Intimate pods strictly capped at 4–6 thinkers",
+      feature: "Group Size",
+      traditional: "25–35 children in crowded classrooms",
+      gritwit: "Small friendly pods of just 4–6 children",
       icon: Users
     },
     {
-      feature: "Instruction Style",
-      traditional: "Passive listening; educator provides formula",
-      gritwit: "Socratic inquiry; children discover solution strategies",
+      feature: "How Children Learn",
+      traditional: "Passive listening; teacher hands out the formula",
+      gritwit: "Children explore clues and discover answers for themselves",
       icon: Lightbulb
     },
     {
-      feature: "Handling Errors",
-      traditional: "Penalised as failure; focus on final score",
-      gritwit: "Celebrated as rich data points; focus on thinking process",
+      feature: "When a Child Gets Stuck",
+      traditional: "Marked wrong; focus is solely on the final mark",
+      gritwit: "Celebrated as a great clue; focus is on how the child thought",
       icon: Flame
     },
     {
-      feature: "Long-term Impact",
-      traditional: "Transient memory discarded after school tests",
-      gritwit: "Durable mental models that adapt to any future field",
+      feature: "The Lasting Result",
+      traditional: "Forgotten quickly after the school exam ends",
+      gritwit: "A calm, thoughtful approach to everyday challenges and life",
       icon: TrendingUp
     }
   ]
@@ -162,54 +156,54 @@ export default function AboutPage() {
   const sessionFlow = [
     {
       step: "01",
-      title: "Cognitive Warm-Up",
+      title: "Playful Warm-Up",
       time: "8 mins",
-      desc: "Playful lateral thinking riddle or visual optical illusion to awaken curiosity and get every child vocal."
+      desc: "A fun riddle or optical illusion puzzle to get every child smiling, relaxed, and talking."
     },
     {
       step: "02",
-      title: "Core Skill Challenge",
+      title: "Today's Puzzle Quest",
       time: "24 mins",
-      desc: "Multi-level tactile or digital problem pod (e.g. 3D spatial nets, cipher logic, or analogical deductions)."
+      desc: "Hands-on shape riddles, pattern ciphers, or balance games explored in pairs and together."
     },
     {
       step: "03",
-      title: "Witty's Quest",
+      title: "Witty's Mystery",
       time: "10 mins",
-      desc: "Collaborative mystery puzzle where children team up in pairs to synthesize clues and defend their reasoning."
+      desc: "A friendly team puzzle where kids share clues, explain their reasons, and celebrate together."
     },
     {
       step: "04",
-      title: "Character Corner & Reflection",
+      title: "Character Corner & Spark",
       time: "8 mins",
-      desc: "Discussion of empathy, intellectual honesty, and perseverance, followed by a personalized take-home spark."
+      desc: "A warm chat about kindness, patience, and trying again, plus a fun puzzle to share at dinner."
     }
   ]
 
   return (
-    <div className="space-y-20 sm:space-y-28 pb-24">
+    <div className="space-y-16 sm:space-y-24 pb-20">
       
       {/* 1. Header Hero Banner */}
       <PageBanner
-        badge="Our Story, Pedagogy & Leadership"
-        title="Where Thinking Skills Meet"
-        titleHighlight="Human Values."
-        description="GritWit is an educator-led cognitive academy for children aged 6–9. We nurture critical thinking, logical reasoning, and heartfelt confidence through 20 joyful, interactive sessions."
+        badge="A Personal Note from the Educator"
+        title="Where Thinking Meets"
+        titleHighlight="Kind Hearts."
+        description="GritWit was born out of a simple wish: to give children aged 6–9 a warm, playful space where they can slow down, wonder out loud, and learn how to think for themselves."
         bgImage="/gritwit/about-pod-thinking.jpg"
         breadcrumbs={[
           { label: 'Home', href: '/' },
           { label: 'About GritWit' }
         ]}
         stats={[
-          { label: 'Focus Age Group', value: 'Ages 6–9' },
-          { label: 'Thinking Pods', value: '4–6 per Pod' },
-          { label: 'Core Science', value: '7 Research Pillars' },
-          { label: 'Young Thinkers', value: '500+ Empowered' }
+          { label: 'Ages Welcome', value: 'Ages 6–9' },
+          { label: 'Small Pods', value: '4–6 Children' },
+          { label: 'Learning Journey', value: '20 Fun Sessions' },
+          { label: 'Guided Live', value: '100% Educator-Led' }
         ]}
         themeColor="cyan"
       />
 
-      {/* 1.5 ABOUT AT A GLANCE: 3 SUMMARY METRIC CARDS (Matching Program & Other Pages) */}
+      {/* 1.5 ABOUT AT A GLANCE: 3 SUMMARY METRIC CARDS */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           
@@ -219,11 +213,11 @@ export default function AboutPage() {
             </div>
             <h3 className="text-xl font-black text-stone-900">Small Friendly Pods</h3>
             <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-              Strictly 4 to 6 children per pod so every child has space to ask questions, test ideas, and be heard with gentle educator guidance.
+              Just 4 to 6 children per pod, giving every child the time and gentle encouragement to share ideas without feeling rushed.
             </p>
             <div className="pt-2 text-xs font-bold text-teal-800 flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-teal-600" />
-              <span>100% Active Speaking & Thinking Time</span>
+              <span>Every child is heard and valued</span>
             </div>
           </div>
 
@@ -237,7 +231,7 @@ export default function AboutPage() {
             </p>
             <div className="pt-2 text-xs font-bold text-amber-900 flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-amber-600" />
-              <span>15 Higher-Order Thinking Skills</span>
+              <span>Hands-on thinking through play</span>
             </div>
           </div>
 
@@ -251,151 +245,133 @@ export default function AboutPage() {
             </p>
             <div className="pt-2 text-xs font-bold text-orange-900 flex items-center gap-1.5">
               <CheckCircle2 className="w-4 h-4 text-orange-600" />
-              <span>Logic Meets Moral Values</span>
+              <span>Logic meets kind hearts</span>
             </div>
           </div>
 
         </div>
       </section>
 
-      {/* 2. UPGRADED ABOUT SECTION: MULTI-IMAGE COMPOSITION ON LEFT, TEXT ON RIGHT */}
+      {/* 2. OUR STORY & PHILOSOPHY */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           
-          {/* Left Column: Multi-Image Asymmetrical Composition with Floating Badges */}
+          {/* Left Column: Image Composition */}
           <div className="lg:col-span-6 relative">
             <div className="relative w-full max-w-lg mx-auto">
               
-              {/* Primary Image: Collaborative Pod of Children */}
               <div className="relative rounded-[36px] rounded-tl-[72px] overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group z-10">
                 <img
                   src="/gritwit/about-pod-thinking.jpg"
-                  alt="Children collaborating over cognitive logic puzzles in GritWit pod"
+                  alt="Children collaborating over puzzles at GritWit"
                   className="w-full h-[320px] sm:h-[360px] object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent pointer-events-none" />
                 
-                {/* Top Badge on Primary Image */}
-                <div className="absolute top-4 left-4 bg-slate-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-teal-400/30 flex items-center gap-1.5 text-xs font-bold text-amber-300 shadow-md">
+                <div className="absolute top-4 left-4 bg-slate-950/85 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-amber-300/40 flex items-center gap-1.5 text-xs font-bold text-amber-300 shadow-md">
                   <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Interactive Pod Learning</span>
+                  <span>Small, Friendly Pod Learning</span>
                 </div>
               </div>
 
-              {/* Secondary Overlapping Image: Mentor Guiding a Thinker */}
-              <div className="absolute -bottom-10 -right-4 sm:-right-8 w-48 sm:w-56 h-48 sm:h-56 rounded-[30px] rounded-br-[60px] overflow-hidden shadow-2xl border-4 border-white bg-teal-900 group z-20 hidden xs:block">
+              <div className="absolute -bottom-8 -right-4 sm:-right-6 w-44 sm:w-52 h-44 sm:h-52 rounded-[28px] rounded-br-[56px] overflow-hidden shadow-2xl border-4 border-white bg-amber-100 group z-20 hidden xs:block">
                 <img
                   src="/gritwit/about-mentor-child.jpg"
-                  alt="Educator gently mentoring child at GritWit"
+                  alt="Educator gently guiding a child at GritWit"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-teal-950/60 to-transparent pointer-events-none" />
-                <div className="absolute bottom-2.5 left-2.5 right-2.5 bg-stone-950/80 backdrop-blur-sm p-1.5 rounded-xl text-center text-[10px] font-bold text-amber-200 border border-teal-500/30">
-                  1-on-1 Socratic Scaffolding
+                <div className="absolute inset-0 bg-gradient-to-t from-stone-950/60 to-transparent pointer-events-none" />
+                <div className="absolute bottom-2.5 left-2.5 right-2.5 bg-stone-950/80 backdrop-blur-sm p-1.5 rounded-xl text-center text-[10px] font-bold text-amber-200 border border-amber-400/30">
+                  Gentle 1-on-1 Guidance
                 </div>
               </div>
 
-              {/* Floating Stat Badge */}
-              <div className="absolute -top-5 -right-2 sm:-right-4 bg-white/95 backdrop-blur-md py-2 px-4 rounded-2xl shadow-xl border border-stone-200/90 z-20 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-amber-400 text-stone-950 flex items-center justify-center font-black">
-                  <Users className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="block text-sm font-black text-stone-900">500+ Thinkers</span>
-                  <span className="block text-[11px] font-semibold text-teal-700">Ages 6–9 Empowered</span>
+              <div className="absolute -bottom-4 -left-4 w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-400 to-orange-400 p-0.5 shadow-xl flex items-center justify-center z-20 transform -rotate-6">
+                <div className="w-full h-full rounded-[14px] bg-white flex items-center justify-center">
+                  <Brain className="w-7 h-7 text-amber-600" />
                 </div>
               </div>
 
-              {/* Floating Star Badge (Brand Highlight) */}
-              <div className="absolute -bottom-4 -left-4 w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-600 to-amber-400 p-0.5 shadow-xl flex items-center justify-center z-20 transform -rotate-6">
-                <div className="w-full h-full rounded-[14px] bg-stone-950 flex items-center justify-center">
-                  <Brain className="w-7 h-7 text-amber-300" />
-                </div>
-              </div>
-
-              {/* Soft Ambient Background Glows */}
-              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-teal-500/20 rounded-full blur-3xl -z-10" />
-              <div className="absolute -top-6 -right-6 w-40 h-40 bg-amber-400/20 rounded-full blur-3xl -z-10" />
+              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-amber-300/20 rounded-full blur-3xl -z-10" />
+              <div className="absolute -top-6 -right-6 w-40 h-40 bg-teal-300/20 rounded-full blur-3xl -z-10" />
             </div>
           </div>
 
-          {/* Right Column: Detailed Narrative, Brand Highlights & Action Pillars */}
+          {/* Right Column: Warm, Personal Narrative */}
           <div className="lg:col-span-6 space-y-6 text-left">
             
-            <div className="inline-flex items-center gap-2 bg-teal-100 text-teal-900 px-3.5 py-1.5 rounded-full text-xs font-bold border border-teal-200">
-              <Compass className="w-3.5 h-3.5 text-teal-700" />
-              <span>About GritWit & What Sets Us Apart</span>
+            <div className="inline-flex items-center gap-2 bg-amber-100 text-amber-900 px-3.5 py-1.5 rounded-full text-xs font-bold border border-amber-200">
+              <Compass className="w-3.5 h-3.5 text-amber-700" />
+              <span>Why GritWit Exists</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight leading-[1.2]">
-              Building Independent Thinkers With{' '}
+              A Thoughtful Space Where Children Learn to{' '}
               <span className="inline-block bg-amber-400 text-stone-950 px-3 py-0.5 rounded-xl font-black shadow-sm transform -rotate-1 border border-amber-300">
-                Resilience & Empathy.
+                Think for Themselves.
               </span>
             </h2>
 
-            <p className="text-base sm:text-lg text-stone-600 leading-relaxed font-normal">
-              At GritWit, we believe every child is born naturally inquisitive. However, conventional classroom schooling often rewards immediate rote answers over deep exploratory problem solving.
+            <p className="text-base text-stone-700 leading-relaxed font-normal">
+              Children are naturally full of wonder. They ask questions constantly and love discovering how things work. But too often, conventional schooling rushes them to find the single &ldquo;right answer&rdquo; as quickly as possible.
             </p>
 
             <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
-              We created an educator-led sanctuary where children learn <em>how to think, not what to think</em>. Through multi-sensory challenges, spatial-visual dilemmas, verbal analogies, and moral dilemmas, children learn to navigate complexity with quiet confidence.
+              When children are only rewarded for fast recall, they start fearing the messy, wonderful process of figuring things out. We created GritWit as an antidote to that: a warm, playful space where making mistakes is welcomed, clues are explored with curiosity, and children discover that they are capable of solving big, interesting problems.
             </p>
 
-            {/* 4 Feature Highlights Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-stone-50 border border-stone-200/80">
-                <div className="w-9 h-9 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center shrink-0">
+              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-amber-50/70 border border-amber-200/80">
+                <div className="w-9 h-9 rounded-xl bg-amber-400 text-stone-950 flex items-center justify-center shrink-0 font-bold">
                   <Puzzle className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-stone-900">15 Higher-Order Skills</h4>
-                  <p className="text-xs text-stone-500 leading-snug">Visual analogies, syllogisms, nets & Fermi logic.</p>
+                  <h4 className="text-sm font-bold text-stone-900">4 Core Thinking Areas</h4>
+                  <p className="text-xs text-stone-600 leading-snug">Critical thinking, logic, comprehension, and problem solving.</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-stone-50 border border-stone-200/80">
-                <div className="w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-teal-50/70 border border-teal-200/80">
+                <div className="w-9 h-9 rounded-xl bg-teal-600 text-white flex items-center justify-center shrink-0 font-bold">
                   <Users className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-stone-900">Pods of 4–6 Thinkers</h4>
-                  <p className="text-xs text-stone-500 leading-snug">Every child vocalises hypotheses with 100% voice time.</p>
+                  <h4 className="text-sm font-bold text-stone-900">Pods of 4–6 Friends</h4>
+                  <p className="text-xs text-stone-600 leading-snug">Every child has voice, time, and personal attention.</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-stone-50 border border-stone-200/80">
-                <div className="w-9 h-9 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center shrink-0">
-                  <GraduationCap className="w-5 h-5" />
+              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-orange-50/70 border border-orange-200/80">
+                <div className="w-9 h-9 rounded-xl bg-orange-500 text-white flex items-center justify-center shrink-0 font-bold">
+                  <Heart className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-stone-900">Educator Mentorship</h4>
-                  <p className="text-xs text-stone-500 leading-snug">Guided by trained primary specialists, never pre-recorded bots.</p>
+                  <h4 className="text-sm font-bold text-stone-900">Character & Values</h4>
+                  <p className="text-xs text-stone-600 leading-snug">Honesty, empathy, and patience woven into every puzzle.</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-stone-50 border border-stone-200/80">
-                <div className="w-9 h-9 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0">
+              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200/80">
+                <div className="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center shrink-0 font-bold">
                   <TrendingUp className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-bold text-stone-900">Check-In & Growth</h4>
-                  <p className="text-xs text-stone-500 leading-snug">Session 01 to Session 20 measurable progress roadmap.</p>
+                  <h4 className="text-sm font-bold text-stone-900">Clear Parent Updates</h4>
+                  <p className="text-xs text-stone-600 leading-snug">Friendly check-ins show your child&apos;s growth over 20 sessions.</p>
                 </div>
               </div>
             </div>
 
-            {/* Action Buttons */}
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <Link href="/program">
-                <Button size="lg" className="bg-teal-700 hover:bg-teal-800 text-white font-bold text-sm px-7 py-5 rounded-2xl shadow-lg flex items-center gap-2">
-                  <span>Explore The 20 Sessions</span>
+                <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-stone-950 font-black text-sm px-7 py-5 rounded-2xl shadow-md border border-amber-300 flex items-center gap-2">
+                  <span>Explore the 20 Sessions</span>
                   <ArrowRight className="w-4 h-4" />
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button size="lg" variant="outline" className="border-stone-300 hover:bg-stone-50 text-stone-800 font-bold text-sm px-6 py-5 rounded-2xl">
-                  <span>Book a Call with Educator</span>
+                <Button size="lg" variant="outline" className="border-stone-300 bg-white hover:bg-stone-50 text-stone-800 font-bold text-sm px-6 py-5 rounded-2xl">
+                  <span>Have a Chat With Us</span>
                 </Button>
               </Link>
             </div>
@@ -405,167 +381,166 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 3. UPGRADED VISION & MISSION SECTION WITH STATS AND CORE PILLARS */}
+      {/* 3. A PERSONAL NOTE FROM THE EDUCATOR */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-teal-50/60 rounded-3xl p-8 sm:p-14 text-stone-900 shadow-xl border border-amber-200/90 relative overflow-hidden">
           
-          {/* Vision Card */}
-          <div className="relative rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-teal-50 via-white to-amber-50/60 text-stone-900 shadow-xl overflow-hidden border border-teal-200/90 flex flex-col justify-between">
-            <div className="absolute top-0 right-0 w-72 h-72 bg-teal-400/15 rounded-full blur-3xl pointer-events-none" />
-            <div className="relative z-10 space-y-6">
-              <div className="flex items-center justify-between">
-                <div className="w-14 h-14 rounded-2xl bg-teal-600 flex items-center justify-center text-white shadow-md">
-                  <Eye className="w-7 h-7" />
-                </div>
-                <span className="text-xs font-black uppercase tracking-widest text-teal-800 bg-teal-100 border border-teal-300 px-3 py-1 rounded-full">
-                  Our Long-Term Vision
-                </span>
+          <div className="absolute -top-24 -right-24 w-96 h-96 bg-amber-400/20 rounded-full blur-3xl pointer-events-none" />
+          
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            
+            <div className="lg:col-span-5 flex flex-col items-center text-center">
+              <div className="relative w-60 h-60 sm:w-68 sm:h-68 rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-amber-100 group">
+                <img
+                  src="/gritwit/educator-founder.jpg"
+                  alt="Educator and founder of GritWit"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                />
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-black text-stone-900 leading-tight">
-                A generation of children with the mental agility to solve tomorrow’s problems, and the empathy to serve the world kindly.
-              </h2>
-              
-              <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-                We envision a world where a child’s intelligence is not measured by test speed or memorised answers, but by their curiosity, kindness, and bravery when facing tricky new challenges.
-              </p>
-
-              <div className="grid grid-cols-2 gap-4 pt-4 border-t border-teal-100">
-                <div>
-                  <span className="block text-2xl font-black text-amber-700">10,000+</span>
-                  <span className="text-xs text-stone-600 font-semibold">Happy Young Thinkers by 2028</span>
-                </div>
-                <div>
-                  <span className="block text-2xl font-black text-teal-800">100%</span>
-                  <span className="text-xs text-stone-600 font-semibold">Educator-Led Friendly Pods</span>
+              <div className="mt-5 space-y-1">
+                <h3 className="text-2xl font-black text-stone-900">A Message From the Educator</h3>
+                <p className="text-amber-800 font-extrabold text-sm">Founder & Learning Mentor</p>
+                <div className="pt-2 flex items-center justify-center gap-2 text-xs font-semibold text-stone-600">
+                  <GraduationCap className="w-4 h-4 text-teal-600" />
+                  <span>Passionate about how young minds think and grow</span>
                 </div>
               </div>
             </div>
 
-            <div className="relative z-10 pt-6 mt-6 border-t border-teal-100 flex items-center gap-2 text-xs font-bold text-teal-900">
-              <Sparkles className="w-4 h-4 text-amber-500" />
-              <span>Nurturing Curiosity • Clear Thinking • Big Hearts</span>
-            </div>
-          </div>
-
-          {/* Mission Card */}
-          <div className="relative rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-amber-500/10 via-white to-amber-50/50 text-stone-900 shadow-2xl overflow-hidden border border-amber-300/80 flex flex-col justify-between">
-            <div className="absolute top-0 right-0 w-72 h-72 bg-amber-400/15 rounded-full blur-3xl pointer-events-none" />
-            <div className="relative z-10 space-y-6">
-              <div className="flex items-center justify-between">
-                <div className="w-14 h-14 rounded-2xl bg-amber-400 text-stone-950 flex items-center justify-center font-black shadow-md">
-                  <Target className="w-7 h-7" />
-                </div>
-                <span className="text-xs font-black uppercase tracking-widest text-amber-800 bg-amber-100 border border-amber-300 px-3 py-1 rounded-full">
-                  Our Mission In Action
-                </span>
+            <div className="lg:col-span-7 space-y-5">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-amber-300 text-xs font-bold text-amber-900 shadow-2xs">
+                <Sparkles className="w-4 h-4 text-amber-500" />
+                <span>Why I Started GritWit</span>
               </div>
 
-              <h2 className="text-2xl sm:text-3xl font-black text-stone-900 leading-tight">
-                To scaffold essential cognitive habits and moral character in children aged 6–9 through joyful, interactive thinking pods.
+              <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight leading-tight">
+                &ldquo;Children don&apos;t need more pressure. They need the freedom to wonder.&rdquo;
               </h2>
 
-              <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-                By replacing passive worksheets with an evidence-based framework of 15 higher-order cognitive skills and an integrated Character Corner, we cultivate independent problem solvers who think clearly and act kindly.
-              </p>
+              <div className="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed font-normal">
+                <p>
+                  As an educator, I kept noticing the same heartbreaking moment: a bright 7-year-old would look at an unfamiliar problem and instantly freeze. Not because they couldn&apos;t solve it, but because they had been conditioned to believe that not knowing the answer right away was a failure.
+                </p>
+                <p>
+                  Real thinking is different. It is curious, playful, and patient. When children are given permission to say, <em>&ldquo;I don&apos;t know yet, but let me try this clue,&rdquo;</em> something magical happens—their eyes light up, and their natural intelligence takes over.
+                </p>
+                <p>
+                  I created GritWit to be that safe, joyful space. A place where children learn to enjoy the challenge, support their friends, and build a quiet confidence that serves them far beyond any classroom.
+                </p>
+              </div>
 
-              <div className="grid grid-cols-2 gap-4 pt-4 border-t border-amber-200">
-                <div>
-                  <span className="block text-2xl font-black text-stone-900">20 Sessions</span>
-                  <span className="text-xs text-stone-500">Structured Cognitive Journey</span>
-                </div>
-                <div>
-                  <span className="block text-2xl font-black text-teal-700">4 Core Skills</span>
-                  <span className="text-xs text-stone-500">Critical, Logic, Comp, Problem</span>
-                </div>
+              <div className="pt-4 flex flex-wrap items-center gap-4">
+                <Link href="/contact">
+                  <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-stone-950 font-black text-sm px-7 py-5 rounded-2xl shadow-md border border-amber-300 flex items-center gap-2">
+                    <span>Book a Discovery Conversation</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link href="/program">
+                  <Button size="lg" variant="outline" className="border-stone-300 bg-white hover:bg-amber-50/50 text-stone-800 font-bold text-sm px-6 py-5 rounded-2xl">
+                    <span>See What Children Experience</span>
+                  </Button>
+                </Link>
               </div>
             </div>
 
-            <div className="relative z-10 pt-6 mt-6 border-t border-stone-200 flex items-center gap-2 text-xs font-bold text-teal-800">
-              <CheckCircle className="w-4 h-4 text-teal-600" />
-              <span>Small 4–6 Pods • Zero Rote Drills • Lifelong Impact</span>
-            </div>
           </div>
-
         </div>
       </section>
 
-      {/* 4. THE COGNITIVE WINDOW: PIAGET CONCRETE OPERATIONAL STAGE */}
+      {/* 4. HOW CHILDREN LEARN BEST (7 Core Ideas Explained Simply) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="bg-stone-50 rounded-3xl p-8 sm:p-14 border border-stone-200/90 space-y-10">
           
-          <div className="lg:col-span-6 space-y-6">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-teal-800 bg-teal-100 px-3.5 py-1.5 rounded-full border border-teal-200">
-              Developmental Window (Ages 6–9)
+              Our Educational Philosophy
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight leading-tight">
-              Between ages 6 and 9, a child’s brain undergoes its most rapid reasoning leap.
+            <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight">
+              How Children Learn Best
             </h2>
-            <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-              In developmental psychology (Jean Piaget), this corresponds to the critical transition into the <em>Concrete Operational Stage</em>. Children transition from purely visual, intuitive impressions into reversible mental operations, spatial geometry, classification, and relational causality.
+            <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
+              Everything we do in GritWit is built around these seven simple, child-friendly learning principles.
             </p>
-            <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
-              If children are exposed only to repetitive worksheets during this window, their brain learns to wait for instructions. But when invited to explore, test hypotheses, and deduce patterns, their neural architecture builds durable mental models that empower them for life.
-            </p>
-
-            <div className="grid grid-cols-2 gap-4 pt-3">
-              <div className="p-4 rounded-2xl bg-teal-50/80 border border-teal-200 space-y-1.5">
-                <span className="font-black text-teal-900 text-sm flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-teal-600" />
-                  Grit (Resilience)
-                </span>
-                <p className="text-xs text-stone-600 leading-relaxed">
-                  The patience to stay engaged with an ambiguous problem when the first solution doesn’t work immediately.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-2xl bg-amber-50/80 border border-amber-200 space-y-1.5">
-                <span className="font-black text-amber-900 text-sm flex items-center gap-1.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-amber-500" />
-                  Wit (Ingenuity)
-                </span>
-                <p className="text-xs text-stone-600 leading-relaxed">
-                  The sharpness to connect subtle clues, identify fallacies, and engineer elegant breakthrough solutions.
-                </p>
-              </div>
-            </div>
           </div>
 
-          <div className="lg:col-span-6 relative">
-            <div className="relative rounded-[40px] rounded-tl-[90px] rounded-br-[70px] overflow-hidden shadow-2xl border-4 border-amber-300 bg-stone-900 group">
-              <img
-                src="/gritwit/hero-child.jpg"
-                alt="Child engaged in cognitive thinking puzzles"
-                className="w-full h-[460px] object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/40 to-transparent p-8 flex flex-col justify-end text-white">
-                <div className="inline-flex items-center gap-2 bg-amber-400 text-stone-950 font-black text-xs px-3.5 py-1.5 rounded-full w-fit mb-3 shadow-md">
-                  <Star className="w-3.5 h-3.5 fill-current" />
-                  <span>The GritWit Creed</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {learningPillars.slice(0, 6).map((pillar, idx) => {
+              const Icon = pillar.icon
+              return (
+                <div 
+                  key={idx}
+                  className="bg-white p-6 sm:p-7 rounded-3xl border border-stone-200/80 shadow-sm hover:shadow-md transition-all space-y-3 flex flex-col justify-between hover:border-amber-300"
+                >
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center font-bold text-xs">
+                          {pillar.number}
+                        </div>
+                        <span className="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-100">
+                          {pillar.tag}
+                        </span>
+                      </div>
+                      <Icon className="w-5 h-5 text-amber-600" />
+                    </div>
+
+                    <h3 className="font-black text-stone-900 text-base leading-snug">
+                      {pillar.title}
+                    </h3>
+                    
+                    <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
+                      {pillar.desc}
+                    </p>
+                  </div>
+
+                  <div className="pt-3 border-t border-stone-100 text-[11px] font-bold text-teal-800 flex items-center gap-1.5">
+                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                    <span>{pillar.highlight}</span>
+                  </div>
                 </div>
-                <blockquote className="text-base sm:text-lg font-semibold leading-relaxed italic border-l-4 border-teal-400 pl-4 text-slate-100">
-                  &ldquo;A sharp thinker and a kind heart — that&apos;s what we are building together. Logic without empathy is cold; empathy without logic is ineffective. We need both.&rdquo;
-                </blockquote>
+              )
+            })}
+          </div>
+
+          {/* 7th Principle Banner */}
+          <div className="bg-gradient-to-r from-amber-400 via-amber-300 to-teal-200 text-stone-950 p-6 sm:p-10 rounded-3xl border border-amber-300/80 flex flex-col md:flex-row items-center justify-between gap-6 shadow-md">
+            <div className="space-y-2 max-w-2xl">
+              <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-amber-950 bg-white/80 border border-amber-400 px-3 py-1 rounded-full">
+                <MessageSquareQuote className="w-3.5 h-3.5 text-amber-600" />
+                <span>Principle 07 • Asking Questions Instead of Giving Answers</span>
               </div>
+              <h3 className="text-xl sm:text-2xl font-black text-stone-950">
+                Helping Kids Say: &ldquo;I Figured It Out Myself!&rdquo;
+              </h3>
+              <p className="text-xs sm:text-sm text-stone-900 font-medium leading-relaxed">
+                When a child asks for the answer, we ask a fun question right back. By nudging them toward their own eureka moment, they discover genuine confidence that no worksheet could ever give them.
+              </p>
             </div>
+            <Link href="/program" className="shrink-0">
+              <Button className="bg-stone-950 hover:bg-stone-900 text-white font-black text-xs px-7 py-4 rounded-xl shadow-md">
+                See the 20 Sessions
+              </Button>
+            </Link>
           </div>
 
         </div>
       </section>
 
-      {/* 5. NEW: TRADITIONAL EDUCATION VS. GRITWIT COMPARISON MATRIX */}
+      {/* 5. A DIFFERENT APPROACH TO LEARNING (Contrast Matrix) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-3xl p-8 sm:p-12 border border-stone-200/90 shadow-sm space-y-8">
           
           <div className="text-center max-w-3xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-teal-800 bg-teal-100 px-3.5 py-1.5 rounded-full border border-teal-200">
-              Pedagogical Contrast
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-200">
+              A Different Approach
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight">
-              Why Traditional Worksheets Fall Short
+              Why We Move Beyond Traditional Worksheets
             </h2>
             <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
-              Most after-school classes optimize for speed and rote drill. GritWit is built from the ground up to cultivate deep mental models and intellectual autonomy.
+              Most after-school tuition focuses on speed and drilling formulas. GritWit focuses on genuine understanding, calm reasoning, and the joy of solving puzzles.
             </p>
           </div>
 
@@ -573,9 +548,9 @@ export default function AboutPage() {
             <table className="w-full text-left text-sm border-collapse min-w-[620px]">
               <thead>
                 <tr className="border-b-2 border-stone-200">
-                  <th className="py-4 px-4 font-black text-stone-900 text-base">Dimension</th>
-                  <th className="py-4 px-4 font-bold text-stone-500 text-base w-5/12">Conventional Worksheets & Tutoring</th>
-                  <th className="py-4 px-4 font-black text-teal-800 text-base w-5/12 bg-teal-50/60 rounded-t-2xl">The GritWit Cognitive Pod</th>
+                  <th className="py-4 px-4 font-black text-stone-900 text-base">What Matters Most</th>
+                  <th className="py-4 px-4 font-bold text-stone-500 text-base w-5/12">Conventional Worksheets & Drills</th>
+                  <th className="py-4 px-4 font-black text-teal-800 text-base w-5/12 bg-amber-50/60 rounded-t-2xl">The GritWit Learning Pod</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-stone-100">
@@ -584,7 +559,7 @@ export default function AboutPage() {
                   return (
                     <tr key={idx} className="hover:bg-stone-50/50 transition-colors">
                       <td className="py-4 px-4 font-bold text-stone-900 flex items-center gap-2">
-                        <Icon className="w-4 h-4 text-teal-600" />
+                        <Icon className="w-4 h-4 text-amber-600" />
                         <span>{item.feature}</span>
                       </td>
                       <td className="py-4 px-4 text-stone-600">
@@ -593,7 +568,7 @@ export default function AboutPage() {
                           <span>{item.traditional}</span>
                         </div>
                       </td>
-                      <td className="py-4 px-4 font-semibold text-stone-900 bg-teal-50/40">
+                      <td className="py-4 px-4 font-semibold text-stone-900 bg-amber-50/40">
                         <div className="flex items-start gap-2">
                           <Check className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
                           <span>{item.gritwit}</span>
@@ -609,168 +584,19 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 6. MEET THE FOUNDER SECTION */}
+      {/* 6. WHAT HAPPENS INSIDE A 50-MINUTE SESSION */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-amber-50/90 via-orange-50/40 to-teal-50/60 rounded-3xl p-8 sm:p-14 text-stone-900 shadow-xl border border-amber-200/90 relative overflow-hidden">
-          
-          <div className="absolute -top-24 -right-24 w-96 h-96 bg-amber-400/20 rounded-full blur-3xl pointer-events-none" />
-          
-          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            
-            {/* Founder Photo & Accreditation */}
-            <div className="lg:col-span-5 flex flex-col items-center text-center">
-              <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-amber-100 group">
-                <img
-                  src="/gritwit/educator-founder.jpg"
-                  alt="Founder and Lead Educator at GritWit"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-
-              <div className="mt-5 space-y-1">
-                <h3 className="text-2xl font-black text-stone-900">Lead Educator & Founder</h3>
-                <p className="text-amber-800 font-extrabold text-sm">Curriculum Architect & Cognitive Specialist</p>
-                <div className="pt-2 flex items-center justify-center gap-2 text-xs font-semibold text-stone-600">
-                  <GraduationCap className="w-4 h-4 text-teal-600" />
-                  <span>12+ Years in Primary Pedagogy & Cognitive Design</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Founder Message & Story */}
-            <div className="lg:col-span-7 space-y-5">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-amber-300 text-xs font-bold text-amber-900 shadow-2xs">
-                <Sparkles className="w-4 h-4 text-amber-500" />
-                <span>Founder&apos;s Personal Note</span>
-              </div>
-
-              <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight leading-tight">
-                “Why I built GritWit — and what children truly need today.”
-              </h2>
-
-              <div className="space-y-4 text-stone-700 text-sm sm:text-base leading-relaxed font-normal">
-                <p>
-                  Having spent over a decade teaching in classrooms, I continually witnessed the same pattern: bright, imaginative children being told that intelligence just means memorizing fast answers for a test.
-                </p>
-                <p>
-                  When children are handed formulas before they have a chance to explore, their natural curiosity shrinks. When they face a tricky, unfamiliar problem, they freeze out of fear of making a mistake.
-                </p>
-                <p>
-                  I created GritWit to bring back the pure joy of thinking: the thrill of cracking a puzzle, the courage to try new ideas, and the gentle guidance of a mentor who says: <em>&ldquo;You haven&apos;t solved it yet — let&apos;s explore it together!&rdquo;</em>
-                </p>
-              </div>
-
-              <div className="pt-4 flex flex-wrap items-center gap-4">
-                <Link href="/contact">
-                  <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-stone-950 font-black text-sm px-7 py-5 rounded-2xl shadow-md border border-amber-300 flex items-center gap-2">
-                    <span>Speak Directly with an Educator</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </Link>
-                <Link href="/program">
-                  <Button size="lg" variant="outline" className="border-stone-300 bg-white hover:bg-amber-50/50 text-stone-800 font-bold text-sm px-6 py-5 rounded-2xl">
-                    <span>Explore 20-Session Plan</span>
-                  </Button>
-                </Link>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* 7. SEVEN RESEARCH-BACKED THEORETICAL PILLARS (UPGRADED WITH ICONS & HIGHLIGHTS) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-stone-50 rounded-3xl p-8 sm:p-14 border border-stone-200/90 space-y-12">
-          
-          <div className="text-center max-w-3xl mx-auto space-y-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-teal-800 bg-teal-100 px-3.5 py-1.5 rounded-full border border-teal-200">
-              Pedagogical Architecture
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight">
-              Grounded in 7 Established Cognitive Learning Sciences
-            </h2>
-            <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
-              Every single session, puzzle card, and take-home challenge is scaffolded by decades of developmental psychology research.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {theoreticalPillars.slice(0, 6).map((pillar, idx) => {
-              const Icon = pillar.icon
-              return (
-                <div 
-                  key={idx}
-                  className="bg-white p-7 rounded-3xl border border-stone-200/80 shadow-sm hover:shadow-md transition-all space-y-4 flex flex-col justify-between hover:border-teal-400"
-                >
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-xs">
-                          {pillar.number}
-                        </div>
-                        <span className="text-xs font-bold text-teal-700 bg-teal-50 px-2.5 py-1 rounded-md border border-teal-100">
-                          {pillar.tag}
-                        </span>
-                      </div>
-                      <Icon className="w-5 h-5 text-teal-600" />
-                    </div>
-
-                    <h3 className="font-black text-stone-900 text-base leading-snug">
-                      {pillar.title}
-                    </h3>
-                    
-                    <p className="text-xs sm:text-sm text-stone-600 leading-relaxed">
-                      {pillar.desc}
-                    </p>
-                  </div>
-
-                  <div className="pt-3 border-t border-stone-100 text-[11px] font-bold text-amber-800 flex items-center gap-1.5">
-                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                    <span>{pillar.highlight}</span>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-
-          {/* Special 7th Pillar Banner */}
-          <div className="bg-gradient-to-r from-amber-400 via-amber-300 to-teal-200 text-stone-950 p-6 sm:p-10 rounded-3xl border border-amber-300/80 flex flex-col md:flex-row items-center justify-between gap-6 shadow-lg">
-            <div className="space-y-2 max-w-2xl">
-              <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-amber-950 bg-white/80 border border-amber-400 px-3 py-1 rounded-full">
-                <MessageSquareQuote className="w-3.5 h-3.5 text-amber-600" />
-                <span>Pillar 07 • Socratic Dialogic Inquiry</span>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-black text-stone-950">
-                Educators Who Ask Great Questions, Never Just Hand Out Answers
-              </h3>
-              <p className="text-xs sm:text-sm text-stone-900 font-medium leading-relaxed">
-                By guiding students through playful hints and wonder questions, children discover real cognitive confidence: the proud feeling that *they* solved the puzzle on their own!
-              </p>
-            </div>
-            <Link href="/program" className="shrink-0">
-              <Button className="bg-amber-400 hover:bg-amber-500 text-stone-950 font-black text-xs px-7 py-4 rounded-xl shadow-md">
-                See How It Unfolds in Sessions
-              </Button>
-            </Link>
-          </div>
-
-        </div>
-      </section>
-
-      {/* 8. NEW: WHAT HAPPENS INSIDE A 50-MINUTE GRITWIT POD */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-3xl p-8 sm:p-14 border border-stone-200/90 shadow-sm space-y-12">
+        <div className="bg-white rounded-3xl p-8 sm:p-14 border border-stone-200/90 shadow-sm space-y-10">
           
           <div className="text-center max-w-2xl mx-auto space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-200">
-              Session Anatomy
+              Inside a Session
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight">
-              Inside a 50-Minute Thinking Pod
+              What Happens in a 50-Minute Pod?
             </h2>
             <p className="text-sm sm:text-base text-stone-600">
-              Every session is meticulously scaffolded to maximize cognitive stretch while maintaining playful joy.
+              Every session is designed to keep kids engaged, cheerful, and curious from start to finish.
             </p>
           </div>
 
@@ -778,13 +604,13 @@ export default function AboutPage() {
             {sessionFlow.map((step, idx) => (
               <div 
                 key={idx}
-                className="bg-stone-50 p-6 rounded-3xl border border-stone-200/80 space-y-3 relative hover:border-teal-500 transition-colors"
+                className="bg-stone-50 p-6 rounded-3xl border border-stone-200/80 space-y-3 relative hover:border-amber-400 transition-colors"
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-3xl font-black text-teal-800/30">
+                  <span className="text-3xl font-black text-amber-500/40">
                     {step.step}
                   </span>
-                  <span className="text-xs font-black text-teal-800 bg-teal-100 px-2.5 py-1 rounded-full">
+                  <span className="text-xs font-black text-amber-900 bg-amber-100 px-2.5 py-1 rounded-full">
                     {step.time}
                   </span>
                 </div>
@@ -797,19 +623,19 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 9. OUR FOUR CORE VALUES (UPGRADED WITH COLOR BADGES) */}
+      {/* 7. OUR GUIDING VALUES */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-12">
+        <div className="space-y-10">
           
           <div className="text-center max-w-2xl mx-auto space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-200">
-              Guiding Principles
+              What We Believe In
             </span>
             <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight">
-              The Values That Shape Every Pod
+              Values in Every Interaction
             </h2>
             <p className="text-sm sm:text-base text-stone-600">
-              We hold ourselves to the highest pedagogical integrity in every single interaction.
+              How we treat children and guide their thinking matters just as much as the puzzles we solve.
             </p>
           </div>
 
@@ -819,10 +645,10 @@ export default function AboutPage() {
               return (
                 <div 
                   key={idx}
-                  className="bg-white p-7 rounded-3xl border border-stone-200/90 shadow-sm space-y-4 hover:border-teal-500/50 hover:shadow-md transition-all flex flex-col justify-between"
+                  className="bg-white p-7 rounded-3xl border border-stone-200/90 shadow-sm space-y-4 hover:border-amber-400 hover:shadow-md transition-all flex flex-col justify-between"
                 >
                   <div className="space-y-3">
-                    <div className="w-12 h-12 rounded-2xl bg-teal-50 text-teal-700 flex items-center justify-center border border-teal-100">
+                    <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center border border-amber-200">
                       <Icon className="w-6 h-6" />
                     </div>
                     <div>
@@ -836,7 +662,7 @@ export default function AboutPage() {
 
                   <div className="pt-3 border-t border-stone-100 text-xs font-semibold text-teal-700 flex items-center gap-1.5">
                     <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>Active In Every Session</span>
+                    <span>Lived in every session</span>
                   </div>
                 </div>
               )
@@ -846,57 +672,23 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 10. WHY SMALL PODS (4-6 THINKERS) */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-gradient-to-br from-amber-50 via-teal-50/40 to-white rounded-3xl p-8 sm:p-12 border border-teal-100 shadow-sm">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div className="lg:col-span-8 space-y-4">
-              <span className="text-xs font-bold uppercase tracking-wider text-teal-800 bg-teal-100 px-3 py-1 rounded-full">
-                Intimate Pod Philosophy
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-black text-stone-900">
-                Why We Strictly Limit Pods to 4–6 Thinkers
-              </h2>
-              <p className="text-sm sm:text-base text-stone-600 leading-relaxed">
-                In large batches of 15–30 children, vocal students dominate discussions while reflective, deep thinkers fade into the background. In a GritWit pod of 4 to 6 children, our educators ensure every thinker vocalises their logic, tests multiple hypotheses, and receives immediate personalised feedback.
-              </p>
-              <div className="pt-2 flex flex-wrap gap-4 text-xs font-semibold text-stone-700">
-                <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-teal-600" /> 100% Active Speaking Time</span>
-                <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-teal-600" /> Immediate Clarification</span>
-                <span className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-teal-600" /> Collaborative Peer Thinking</span>
-              </div>
-            </div>
-
-            <div className="lg:col-span-4 flex justify-center">
-              <div className="bg-white p-6 rounded-2xl border border-stone-200 shadow-md text-center space-y-2 w-full max-w-xs">
-                <span className="text-4xl sm:text-5xl font-black text-teal-700 block">4–6</span>
-                <span className="text-xs font-black uppercase tracking-wider text-stone-500 block">Maximum Children Per Pod</span>
-                <p className="text-xs text-stone-600 pt-1">Ensuring genuine psychological safety, individualized scaffolding, and deep educator mentorship.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* 11. FINAL ABOUT PAGE CTA */}
+      {/* 8. FINAL ABOUT PAGE CTA */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-100 text-teal-800 text-xs font-bold">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-bold border border-amber-300">
           <WittyMascot className="w-4 h-4" expression="happy" animate={false} />
-          <span>Take The First Step</span>
+          <span>Come Say Hello</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-black text-stone-900 tracking-tight">
-          Ready to see your child think with clarity, joy and confidence?
+          Ready to see your child think with joy and confidence?
         </h2>
         <p className="text-base text-stone-600 max-w-2xl mx-auto leading-relaxed">
-          Explore our complete 20-session curriculum across all four cognitive domains, or schedule a free 15-minute educator discovery call.
+          We&apos;d love to chat with you about your child, answer any questions, and see if our friendly thinking pods are the right fit.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
           <Link href="/program" className="w-full sm:w-auto">
-            <Button size="lg" className="w-full sm:w-auto bg-teal-700 hover:bg-teal-800 text-white font-bold px-8 py-6 rounded-2xl shadow-lg flex items-center justify-center gap-2">
+            <Button size="lg" className="w-full sm:w-auto bg-amber-400 hover:bg-amber-500 text-stone-950 font-black px-8 py-6 rounded-2xl shadow-lg border border-amber-300 flex items-center justify-center gap-2">
               <BookOpen className="w-5 h-5" />
-              <span>Explore The 20-Session Plan</span>
+              <span>Explore The 20 Sessions</span>
             </Button>
           </Link>
           <Link href="/contact" className="w-full sm:w-auto">

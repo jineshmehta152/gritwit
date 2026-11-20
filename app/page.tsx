@@ -32,7 +32,7 @@ export default function HomePage() {
               {/* Badge */}
               <div className="inline-flex items-center gap-2 bg-white/90 border border-amber-300 px-4 py-1.5 rounded-full text-xs font-bold text-stone-800 shadow-sm backdrop-blur-sm">
                 <WittyMascot className="w-5 h-5" expression="wink" animate={false} />
-                <span>Playful Cognitive Academy for Kids Ages 6–9</span>
+                <span>A Thoughtful, Playful Learning Space for Kids Ages 6–9</span>
               </div>
 
               {/* Punchy, Conversational Headline */}

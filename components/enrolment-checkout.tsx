@@ -44,7 +44,7 @@ export function EnrolmentCheckoutSection() {
       features: [
         "Everything in the Complete Programme",
         "3 Dedicated 1-on-1 45-min Deep Dive Sessions with Lead Educator",
-        "Personalized Cognitive Learning Style Diagnostic",
+        "Personalized Learning Style Summary & Parent Guide",
         "Customized Daily Thinking Routines for Home & School",
         "Priority scheduling for weekday/weekend batch slots",
         "Direct educator WhatsApp access for learning guidance"

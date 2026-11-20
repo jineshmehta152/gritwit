@@ -53,7 +53,7 @@ export function RazorpayPaymentSection() {
       features: [
         "Everything in the Complete 20-Session Programme",
         "3 Private 1-on-1 Mentorship Sessions with Lead Educator",
-        "Personalized Cognitive Learning Style Diagnostic",
+        "Personalized Learning Style Summary & Parent Guide",
         "Customized Daily Thinking Routines for Home & School",
         "Priority batch slot selection & weekend flexibility",
         "Direct educator WhatsApp access for learning guidance",
