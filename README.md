@@ -1,3 +1,4 @@
+
 # GritWit Academy
 
 > **Where thinking skills meet human values.**
